@@ -443,43 +443,6 @@ RF-006: O sistema deverá permitir a edição das informações do usuário e do
 
 **Objetivo do teste:**
 
-- Verificar se o sistema está responsivo no acesso pelo smartphone.
-
-**Requisitos associados:**
-
-RNF-002: O sistema deverá ser responsivo, permitindo sua utilização em computadores desktops, notebooks, tablets e smartphones.
-
-**Passos:**
-
-    1- Acessar o Navegador web do celular;
-
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
-
-    3- Clicar em 'ENTER' no teclado;
-
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
-
-    5- Visualizar os campos de e-mail e senha na Página de Login;
-
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
-
-    7- Clicar no botão de Entrar;
-
-    8- Navegar pelo site verificando seu layout e todas as suas funcionalidades.
-
-**Critérios de êxito:**
-
-- O sistema deverá funcionar normalmente na versão mobile.
-- Deverá aparecer o "Menu hamburguer" contendo as mesmas informações da _sidebar_ que aparece na versão para desktop e notebook.
-- Todas as funcionalidades da aplicação deverão estar operando de forma correta na versão _mobile_.
-- As APIs devem estar funcionando corretamente na versão _mobile_.
-
----
-
-### Caso teste CT-013
-
-**Objetivo do teste:**
-
 - Verificar a funcionalidade de adicionar uma vacina ao perfil do Pet.
 
 **Requisitos associados:**
@@ -514,3 +477,16 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 - Ao acessar o perfil do Pet, deverá aparecer a vacina adicionada recentemente pelo usuário.
 
+---
+
+### Caso teste CT-013
+
+**Objetivo do teste:**
+
+- Verificar a funcionalidade de enviar notificação de vacinação.
+
+**Requisitos associados:**
+
+RF-007: O sistema deverá enviar notificações ao usuário assim que estiver próxima a data da próxima vacina de seu pet.
+
+**Passos:**
