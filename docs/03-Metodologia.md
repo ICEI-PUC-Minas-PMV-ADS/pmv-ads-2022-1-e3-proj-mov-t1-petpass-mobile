@@ -62,9 +62,10 @@ A equipe utilizará o conceito de metodologias ágeis para fazer o gerenciamento
 ### Divisão de Papéis
 
 A equipe está organizada da seguinte maneira:
-- **Scrum Master:** Arthur Bernardo de Almeida Simões
+- **Scrum Master:** Will Machado
 - **Product Owner:** Gabriel Santos Pereira
 - **Equipe de Desenvolvimento:** Aline dos Santos Silva, Arthur Bernardo de Almeida Simões, Arthur Fernandes Roque Ferrarez, Gabriel Santos Pereira, Luisa Helena Gonçalves de Oliveira
+- **Equipe de Design:** Arthur Bernardo de Almeida Simões, Arthur Fernandes Roque Ferrarez
 
 ### Processo
 
