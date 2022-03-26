@@ -1,23 +1,27 @@
-# TÍTULO DO PROJETO
+# PET PASS
 
-`CURSO`
+`PUC Minas - PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS`
 
-`DISCIPLINA`
+`GRADUAÇÃO TECNOLÓGICA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`SEMESTRE`
+`PROJETO: DESENVOLVIMENTO DE APLICAÇÃO INTERATIVA`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`2º SEMESTRE`
+
+O Pet Pass é uma aplicação digital interativa que permite ao usuário ter acesso à cateira de vacinação do seu pet de qualquer lugar que esteja. 
+O sistema foi pensado para ser prático, intuitivo e de fácil navegação, proporcionando ao responsável do animal um melhor acompanhamento das vacinas e medicações que o seu melhor amigo necessitará tomar ao longo da vida. Além disso, a aplicação também pode auxiliar veterinários, hotéis de pets e donos de abrigos de animais, ou lares temporários, já que permite o acompanhamento e a visualização do histórico de vacinação dos pets de forma individualizada.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Aline dos Santos Silva
+* Arthur Bernardo de Almeida Simões
+* Arthur Fernandes Roque Ferrarez
+* Gabriel Santos Pereira
+* Luisa Helena Gonçalves de Oliveira
 
 ## Orientador
 
-* Nome completo do professor 1
+* 
 
 ## Instruções de utilização
 
