@@ -21,7 +21,7 @@ O sistema foi pensado para ser prático, intuitivo e de fácil navegação, prop
 
 ## Orientador
 
-* 
+* Will Machado
 
 ## Instruções de utilização
 
