@@ -29,10 +29,6 @@ O Esquema Relacional corresponde à representação dos dados do Modelo ER em ta
 A seguir, é mostrado o Esquema relacional da aplicação Pet Pass:
 
 ![Esquema Relacional](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Esquema%20Relacional.PNG?raw=true)
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
 
 ## Modelo Físico
 
