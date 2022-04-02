@@ -16,7 +16,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 - **História:** Desde pequena, Priscila sempre teve animais de estimação. Daí veio sua inspiração para se tornar uma médica veterinária pois, diante do seu amor pelos bichinhos, passou a dedicar sua vida a cuidar deles. Fundou um abrigo para acolher animais abandonados, ou em situação de rua, e incentiva a adoção dos mesmos.
 - **Necessidade:** Um de seus desejos é ter um meio mais prático para registrar as informações importantes sobre a vacinação dos animais que se encontram em seu abrigo, já que são muitos.
 
-![Priscila Amaral](https://github.com/ICEI-PUC-Minas-PMV-ADS/pet-pass/blob/main/docs/img/Persona_Priscila%20Amaral.jpg?raw=true)
+![Priscila Amaral](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Persona_Priscila%20Amaral.jpg?raw=true)
 
 ### Elena Lima
 
@@ -26,7 +26,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 - **História:** Após se formar como advogada, Elena resolveu investir em um setor que está em crescimento, o de hotel de animais. Desde sempre amou seus diversos pets e quis conciliar essa característica com a vontade de crescer financeiramente.
 - **Necessidade:** Conhecer os registros de vacinas dos animais antes de hospedá-los em seu hotel.
 
-![Elena Lima](https://github.com/ICEI-PUC-Minas-PMV-ADS/pet-pass/blob/main/docs/img/Persona_Elena%20Lima.jpg?raw=true)
+![Elena Lima](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Persona_Elena%20Lima.jpg?raw=true)
 
 ### Fernanda Amorim
 
@@ -36,7 +36,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 - **História:** Desde a infância Sempre gostou da companhia de animais e agora resolveu adotar um cachorro e um gato de rua.
 - **Necessidade:** Gostaria de ter um local onde possa armazenar as informações referente as vacinas que já foram aplicadas em cada um dos seus pets (nome da vacina, data de aplicação, etc.).
 
-![Fernanda Amorim](https://github.com/ICEI-PUC-Minas-PMV-ADS/pet-pass/blob/main/docs/img/Persona_Fernanda%20Amorim.jpg?raw=true)
+![Fernanda Amorim](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Persona_Fernanda%20Amorim.jpg?raw=true)
 
 ### Carlos Silva
 
@@ -46,7 +46,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 - **História:** Desde pequeno Carlos teve animais diversos. Quando se aposentou, aos 65 anos, resolveu adotar um gato e um cachorro para sua companhia. Hoje em dia vive com esses animais e tem a intenção de mantê-los saudáveis e com cronogramas vacinais em dia.
 - **Necessidade:** Como sempre perde os cartões de vacinação de seus animais, Carlos deseja um local onde possa guardar e acessar os dados vacinais de seus animais de maneira fácil, prática e intuitiva.
 
-![Carlos Silva](https://github.com/ICEI-PUC-Minas-PMV-ADS/pet-pass/blob/main/docs/img/Persona_Carlos%20Silva.jpg?raw=true)
+![Carlos Silva](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Persona_Carlos%20Silva.jpg?raw=true)
 
 ### Jorge Lima
 
@@ -56,7 +56,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 - **História:** Desde pequeno Jorge conviveu com os animais, pois seu pai é dono de uma clínica veterinária. Atualmente, Jorge é estudante de medicina veterinária e trabalha como assistente de seu pai na clínica de sua família.
 - **Necessidade:** Jorge está trabalhando para modernizar os processos burocráticos da clínica e viu a oportunidade de digitalizar o primeiro cadastro dos pacientes. Dessa forma os dados dos animais estariam disponíveis também na forma digital, bem como seu cronograma de vacinação.
 
-![Jorge Lima](https://github.com/ICEI-PUC-Minas-PMV-ADS/pet-pass/blob/main/docs/img/Persona_Jorge%20Lima.jpg?raw=true)
+![Jorge Lima](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Persona_Jorge%20Lima.jpg?raw=true)
 
 ## Histórias de Usuários
 
@@ -76,7 +76,7 @@ A partir da compreensão do cotidiano das personas identificadas para o projeto,
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Atualmente, o procedimento de 
 
 ### Descrição Geral da Proposta
 
