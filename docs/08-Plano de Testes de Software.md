@@ -9,7 +9,7 @@ Esta seção aborda o Plano de Testes de Software a ser aplicado neste projeto. 
 Requisitos para realização dos testes:
 
 - Apicativo disponivel para utilizar em  Android e IOS;
-- Smartphenos (Android e/ou IOS), ou emulador Mobile
+- Smartphones (Android e/ou IOS), ou emulador Mobile
 - Conectividade de Internet para acesso ao aplicativo.
 
 Os testes funcionais a serem realizados na aplicação interativa são descritos a seguir:
