@@ -24,7 +24,9 @@ A seguir, é mostrado o MER da aplicação Pet Pass:
 
 ## Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
+O Esquema Relacional corresponde à representação dos dados do Modelo ER em tabelas, juntamente com as restrições de integridade e chave primária (destacada em negrito) e chave estrangeira (apenas sublinhada).
+
+A seguir, é mostrado o Esquema relacional da aplicação Pet Pass:
 
 ![Esquema Relacional](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Esquema%20Relacional.PNG?raw=true)
  
