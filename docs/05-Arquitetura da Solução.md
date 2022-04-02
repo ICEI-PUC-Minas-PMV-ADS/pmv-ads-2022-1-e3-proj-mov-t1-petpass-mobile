@@ -12,7 +12,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 A seguir, é mostrado o Diagrama de Classes da aplicação Pet Pass:
 
-![Diagrama de Classes](img/02-mob-arch.png)
+![Diagrama de Classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Diagrama%20de%20Classes.png?raw=true)
 
 ## Modelo ER
 
