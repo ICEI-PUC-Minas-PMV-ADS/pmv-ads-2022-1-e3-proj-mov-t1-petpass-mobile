@@ -78,27 +78,24 @@ A partir da compreensão do cotidiano das personas identificadas para o projeto,
 
 Atualmente, o procedimento de registro oficial de um pet exige que o tutor leve o animal ao veterinário para que este o examine, dê as primeiras vacinas e prepare sua carteira de vacinação física. Esse processo é feito totalmente de forma manual, sendo o tutor do pet a pessoa responsável por guardar o cartão físico de vacinação durante toda a vida de seu melhor amigo, sempre carregando-o consigo nas consultas ao veterinário e em eventuais viagens com seu pet.
 
-O diagrama abaixo ilustra este processo:
+O fluxograma abaixo ilustra este processo:
 
 ![Processo atual]()
 
 ### Descrição Geral da Proposta
 
-A proposta do Pet Pass mobile é tornar parte do processo de registro e acompanhamento do esquema vacinal dos pets mais automatizada, flex´´ivel e de fácil acesso. Com o Pet Pass, o proprio tutor do pet poderá fazer seu registro assim que adotar seu melhor amigo, levando, posteriormente, para o veterinário conferir as informações e adicionar os dados de vacinação. Todas as informações do pet poderão ficar armazenadas no aplicativo e relatórios atualizados poderão ser emitidos para o acampanhamento do veterinário, ou apresentação em aeroportos, hotéis, etc. Além disso o sistema também dará lembretes ao usuário de que a data das próximas vacinas.
+A proposta do Pet Pass mobile é tornar parte do processo de registro e acompanhamento do esquema vacinal dos pets mais automatizada, flexível e de fácil acesso. Com o Pet Pass, o proprio tutor do pet poderá fazer seu registro assim que adotar seu melhor amigo, levando, posteriormente, para o veterinário conferir as informações e adicionar os dados de vacinação. Todas as informações do pet poderão ficar armazenadas no aplicativo e relatórios atualizados poderão ser emitidos para o acampanhamento do veterinário, ou apresentação em aeroportos, hotéis, etc. Além disso o sistema também dará lembretes ao usuário sobre as datas das próximas vacinas.
 
+O fluxograma abaixo ilustra o novo processo, utilizando o PetPass mobile como ferramenta:
 
+![Processo com o Pet Pass]()
 
-### Processo 1 – NOME DO PROCESSO
+Para entender melhor o funcionamento interno dos processos que ocorrem dentro do aplicativo do Pet Pass, foi elaborado um fluxograma de processo da aplicação.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
+![Fluxograma de Processo do Pet Pass_1]()
+![Fluxograma de Processo do Pet Pass_2]()
+![Fluxograma de Processo do Pet Pass_3]()
+![Fluxograma de Processo do Pet Pass_4]()
 
 ## Indicadores de Desempenho
 
