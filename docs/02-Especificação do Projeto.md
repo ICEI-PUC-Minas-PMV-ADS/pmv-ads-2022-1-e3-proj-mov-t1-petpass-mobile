@@ -101,12 +101,9 @@ Para entender melhor o funcionamento interno dos processos que ocorrem dentro do
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Os indicadores estabelecidos para a avaliação do desempenho do aplicativo do Pat Pass, após sua disponibilização na Play Store e na Apple Store, são detalhados a seguir:
 
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+![Indicadores de desempenho]()
 
 ## Requisitos
 
