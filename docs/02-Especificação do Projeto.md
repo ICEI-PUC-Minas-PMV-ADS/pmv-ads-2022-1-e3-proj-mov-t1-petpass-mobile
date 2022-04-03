@@ -204,4 +204,4 @@ O processo de determinar o orçamento do projeto é uma tarefa que depende, alé
 
 Nesse contexto, segue abaixo o orçamento estimado para o desenvolvimento do projeto de implantação do Pet Pass mobile.
 
-![Orçamento do projeto]()
+![Orçamento do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Custo%20de%20projeto.PNG?raw=true)
