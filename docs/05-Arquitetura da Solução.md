@@ -57,50 +57,50 @@ Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como
 
 No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e subcaracterísticas segue abaixo as que foram escolhidas para nortear o desenvolvimento do nosso projeto de software bem como a justificativa e métricas que permitirão a equipe avaliar os objetos de interesse. 
+A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e subcaracterísticas segue abaixo as que foram escolhidas para nortear o desenvolvimento do nosso projeto de software bem como a justificativa e métricas que permitirão à equipe avaliar os objetos de interesse. 
 
-- **Segurança** :
+**Segurança**:
 
-Confidencialidade: A aplicação garante a confidencialidade dos dados? Sim e Não.
+- Confidencialidade: *A aplicação garante a confidencialidade dos dados? Sim e Não.*
 
-Integridade: A aplicação garante a integridade dos dados? Sim e Não.
+- Integridade: *A aplicação garante a integridade dos dados? Sim e Não.*
 
-- **Usabilidade** :
+**Usabilidade**:
 
-Apreensibilidade: É fácil aprender a utilizar a aplicação? Sim e Não.
+- Apreensibilidade: *É fácil aprender a utilizar a aplicação? Sim e Não.*
 
-Operacionalidade: É fácil de operar e controlar a funcionalidades da aplicação? Sim e Não.
+- Operacionalidade: *É fácil de operar e controlar a funcionalidades da aplicação? Sim e Não.*
 
-Estética da interface: A aplicação possui interface atual? Sim e Não.
+- Estética da interface: *A aplicação possui interface atual? Sim e Não.*
 
-Inteligibilidade: A interface é de fácil entendimento? Sim e Não
+- Inteligibilidade: *A interface é de fácil entendimento? Sim e Não*
 
-- **Portabilidade** :
+**Portabilidade** :
 
-Adaptabilidade: O sistema esta adaptado a Android e IOS? Sim e Não.
+- Adaptabilidade: *O sistema esta adaptado a Android e IOS? Sim e Não.*
 
-Facilidade de para ser instalado: É fácil instalar a aplicação em outros ambientes? Sim e Não.
+- Facilidade de para ser instalado: *É fácil instalar a aplicação em outros ambientes? Sim e Não.*
 
-Conformidade: aderência a padrões de portabilidade? Sim e Não
+- Conformidade: *O sistema apresenta aderência a padrões de portabilidade? Sim e Não*
 
-- **Confiabilidade** :
+**Confiabilidade** :
 
-Maturidade: Com que frequência a aplicação apresenta falhas? Sempre, As vezes e Nunca.
+- Maturidade: *Com que frequência a aplicação apresenta falhas? Sempre, As vezes e Nunca.*
 
-Recuperabilidade: A aplicação é capaz de recuperar dados após uma falha? Sim e Não.
+- Recuperabilidade: *A aplicação é capaz de recuperar dados após uma falha? Sim e Não.*
 
-Tolerância a falhas: reage bem às falhas que aparecem? Sim e Não
+- Tolerância a falhas: *A aplicação reage bem às falhas que aparecem? Sim e Não*
 
-- **Eficiência** :
+**Eficiência** :
 
-Tempo: Mínimo tempo de resposta? Sim e Não. Máxima velocidade de execução? Sim e Não
+- Tempo: *Mínimo tempo de resposta? Sim e Não. Máxima velocidade de execução? Sim e Não*
 
-Recursos utilizados: mínimo uso de recursos para o mesmo resultado? Sim e Não
+- Recursos utilizados: *Mínimo uso de recursos para o mesmo resultado? Sim e Não*
 
-- **Manutenibilidade** :
+**Manutenibilidade** :
 
-Modificabilidade: há facilidade em modificar o código? Sim e Não
+- Modificabilidade: *Há facilidade em modificar o código? Sim e Não*
 
-Testabilidade: há facilidade de testar a aplicação? Sim e Não
+- Testabilidade: *Há facilidade de testar a aplicação? Sim e Não*
 
 
