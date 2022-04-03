@@ -160,9 +160,9 @@ A seguir, é representado o Diagrama de Casos de Uso do sistema Pet Pass mobile:
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamentos entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. A matriz contempla todos os elementos relevantes que fazem parte do sistema, bem como os *stakeholders* envolvidos no projeto.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+A figura a seguir mostra a matriz de rastreabilidade do projeto do PetPass mobile
 
 ![Matriz de rastreabilidade_3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Matriz%20Rastreab_3_1.PNG?raw=true)
 ![Matriz de rastreabilidade_2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Matriz%20Rastreab_2_1.PNG?raw=true)
