@@ -76,11 +76,17 @@ A partir da compreensão do cotidiano das personas identificadas para o projeto,
 
 ### Análise da Situação Atual
 
-Atualmente, o procedimento de 
+Atualmente, o procedimento de registro oficial de um pet exige que o tutor leve o animal ao veterinário para que este o examine, dê as primeiras vacinas e prepare sua carteira de vacinação física. Esse processo é feito totalmente de forma manual, sendo o tutor do pet a pessoa responsável por guardar o cartão físico de vacinação durante toda a vida de seu melhor amigo, sempre carregando-o consigo nas consultas ao veterinário e em eventuais viagens com seu pet.
+
+O diagrama abaixo ilustra este processo:
+
+![Processo atual]()
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A proposta do Pet Pass mobile é tornar parte do processo de registro e acompanhamento do esquema vacinal dos pets mais automatizada, flex´´ivel e de fácil acesso. Com o Pet Pass, o proprio tutor do pet poderá fazer seu registro assim que adotar seu melhor amigo, levando, posteriormente, para o veterinário conferir as informações e adicionar os dados de vacinação. Todas as informações do pet poderão ficar armazenadas no aplicativo e relatórios atualizados poderão ser emitidos para o acampanhamento do veterinário, ou apresentação em aeroportos, hotéis, etc. Além disso o sistema também dará lembretes ao usuário de que a data das próximas vacinas.
+
+
 
 ### Processo 1 – NOME DO PROCESSO
 
