@@ -183,14 +183,14 @@ Para construir um bom diagrama deve-se partir de um conjunto de atividades defin
 
 A seguir encontr-se o diagrama de redes do projeto do Pet Pass mobile.
 
-![Diagrama de Redes]()
+![Diagrama de Redes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Diagrama_De_Redes.png?raw=true)
 
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
 A seguir encontr-se o diagrama de Gantt do projeto do Pet Pass mobile, utilizado com ferramenta de gerenciamento do cronograma do projeto.
 
-![Gráfico de Gantt_1]()
-![Gráfico de Gantt_2]()
+![Gráfico de Gantt_1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Cronograma%20do%20projeto.png?raw=true)
+![Gráfico de Gantt_2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Grafico_de_Grantt2.png?raw=true)
 
 ## Gerenciamento de Equipe
 
