@@ -196,7 +196,43 @@ A seguir encontr-se o diagrama de Gantt do projeto do Pet Pass mobile, utilizado
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+**Planejar o gerenciamento de recursos**					
+- Planejar como será feita a gestão de recursos do projeto					
+- Consultar opinião especializada sobre esse tipo de projeto					
+- Obter documentações necessárias para o desenvolvimento do projeto					
+- Atribuir funções às pessoas da equipe					
+- Planejar o cronograma de trabalho					
+					
+**Estimar os recursos das atividades**					
+- Analisar quais os recursos necessários para realização das atividades e quantificar					
+- Recursos humanos: desenvolvedores e gestores do projeto					
+- Recursos materiais: cinco computadores com editores de código fonte instalados					
+- Acesso ao Figma					
+- Aulas PUC-Minas					
+					
+**Adquirir recursos**				
+- Acesso das aulas da Puc via matrícula de alunos					
+- Acesso ao figma por contas vinculadas (gmail)					
+- Alunos e componentes do projeto atuam como desenvolvedores e gestores					
+- Utilização de computadores dos alunos do projeto 					
+					
+**Desenvolver a equipe**					
+- Treinamento da equipe em React Native					
+- Treinamento da equipe em gerenciamento de projetos					
+- Treinamento na utilização do Figma					
+- Soft skills					
+					
+**Gerenciar a equipe**					
+- Atualizar a documentação 					
+- Atualizar outros fatores que podem influenciar no desenvolvimento do projeto					
+- Atualização do plano de gerenciamento do projeto					
+					
+**Controlar os recursos**					
+- Informações sobre o desempenho e andamento do trabalho					
+- Atualizaçõe sobre o plano de gerenciamento derecursos
+					
+![image](https://user-images.githubusercontent.com/81052876/161451048-080fbfac-19fb-4038-9fdd-567508646c56.png)
+
 
 ## Gestão de Orçamento
 
