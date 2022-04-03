@@ -112,31 +112,37 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
+A abordagem utilizada na priorização dos requisitos para o desenvolvimento do Pet Pass mobile foi a técnica de Escala de Três Níveis que, independente das nomenclaturas adotadas ou dos possíveis valores sugeridos, possibilita classificar os requisitos em três níveis: Alto, Médio e Baixo. Assim, a técnica da Escala de Três Níveis busca delimitar o universo de possíveis valores desse atributo para tais possibilidades, de modo que a prioridade seja uniformizada e melhor entendida por todos do time. 
+
+Visto que esta é uma técnica bastante simples, é comum que sejam estabelecidos os níveis de prioridade de acordo com dois aspectos principais: importância e urgência. Assim, forma-se um quadrante, capaz de criar prioridades que combinem esses aspectos. A imagem a seguir ilustra essa divisão em quadrantes.
+
+![Classificação de Requisitos]()
+
 ### Requisitos Funcionais
 
-A tabela abaixo apresenta os requisitos funcionais do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+A tabela abaixo apresenta os requisitos funcionais do projeto, identificando a prioridade em que os mesmos devem ser entregues, de acordo com a técnica da Escala de Três Níveis.
 
 | ID     | Descrição do Requisito  | Prioridade |
 | ------ | ----------------------- | ---------- |
-| RF-001 | O sistema deverá permitir a criação de um perfil de usuário para o responsável do pet associado ao seu e-mail. | ALTA |
+| **RF-001** | **O sistema deverá permitir a criação de um perfil de usuário para o responsável do pet associado ao seu e-mail.** | **ALTA** |
 | RF-002 | O sistema deverá permitir criar um perfil para o pet, registrando e permitindo a verificação de seus dados básicos (nome, raça, espécie, peso, idade) e de vacinação (tipo de vacina e data de vacinação). | ALTA |
 | RF-003 | O sistema deverá permitir gerar um relatório com as informações de saúde dos animais (dados do pet, vacinas aplicadas, datas de aplicação, etc.).| ALTA |
-| RF-004 | O sistema deverá permitir a exclusão do perfil do pet, sem excluir a conta do responsável. | ALTA |
-| RF-005 | O sistema deverá permitir a exclusão da conta do usuário responsável pelo pet, excluindo também qualquer perfil de pet vinculado a ela. | ALTA |
+| RF-004 | O sistema deverá permitir a exclusão do perfil do pet, sem excluir a conta do responsável. | MÉDIA |
+| RF-005 | O sistema deverá permitir a exclusão da conta do usuário responsável pelo pet, excluindo também qualquer perfil de pet vinculado a ela. | MÉDIA |
 | RF-006 | O sistema deverá permitir a edição das informações do usuário e dos pets cadastrados e das vacinas aplicadas. | ALTA |
-| RF-007 | O sistema deverá enviar notificações ao usuário assim que estiver próxima a data da pr´rocima vacina de seu pet. | MÉDIA |
+| RF-007 | O sistema deverá enviar notificações ao usuário assim que estiver próxima a data da próxima vacina de seu pet. | BAIXA |
 
 ### Requisitos não Funcionais
 
-A tabela abaixo apresenta os requisitos não funcionais que o projeto deverá atender.
+A tabela abaixo apresenta os requisitos não funcionais que o projeto deverá atender, identificando a prioridade em que os mesmos devem ser entregues, de acordo com a técnica da Escala de Três Níveis.
 
 | ID      | Descrição do Requisito  | Prioridade |
 | ------- | ----------------------- | ---------- |
 | RNF-001 | O sistema deverá funcionar nos principais sistemas Mobile, como Android e IOS | ALTA |
-| RNF-004 | A segurança no armazenamento e na manipulação dos dados do dono e do pet deve seguir as diretrizes da Lei Geral de Proteção de Dados (LGPD). | ALTA |
+| RNF-004 | A segurança no armazenamento e na manipulação dos dados do dono e do pet deve seguir as diretrizes da Lei Geral de Proteção de Dados (LGPD). | MÉDIA |
 | RNF-005 | O sistema deverá ser intuitivo e de fácil utilização, para atender também ao público idoso.| ALTA |
-| RNF-006 | O sistema deverá estar disponível para acesso 24h por dia, exceto quando em manutenção. | MÉDIA |
-| RNF-007 | O sistema deverá disponibilizar as informações cadastrais do responsável e do pet apenas para o usuário responsável pela conta e para a equipe de desenvolvimento e manutenção do software | ALTA |
+| RNF-006 | O sistema deverá estar disponível para acesso 24h por dia, exceto quando em manutenção. | BAIXA |
+| RNF-007 | O sistema deverá disponibilizar as informações cadastrais do responsável e do pet apenas para o usuário responsável pela conta e para a equipe de desenvolvimento e manutenção do software | MÉDIA |
 
 ## Restrições
 
