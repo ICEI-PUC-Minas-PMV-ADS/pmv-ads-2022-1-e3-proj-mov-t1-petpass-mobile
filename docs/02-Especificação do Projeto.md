@@ -103,7 +103,7 @@ Para entender melhor o funcionamento interno dos processos que ocorrem dentro do
 
 Os indicadores estabelecidos para a avaliação do desempenho do aplicativo do Pat Pass, após sua disponibilização na Play Store e na Apple Store, são detalhados a seguir:
 
-![Indicadores de desempenho]()
+![Indicadores de desempenho](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Indicadores%20de%20desempenho.PNG?raw=true)
 
 ## Requisitos
 
