@@ -74,6 +74,8 @@ A partir da compreensão do cotidiano das personas identificadas para o projeto,
 
 ## Modelagem do Processo de Negócio 
 
+A modelagem do processo de negócio foi feita utilizando-se a notação BPMN (*Business Process Model Notation*), gerando um fluxograma para cada situalção.
+
 ### Análise da Situação Atual
 
 Atualmente, o procedimento de registro oficial de um pet exige que o tutor leve o animal ao veterinário para que este o examine, dê as primeiras vacinas e prepare sua carteira de vacinação física. Esse processo é feito totalmente de forma manual, sendo o tutor do pet a pessoa responsável por guardar o cartão físico de vacinação durante toda a vida de seu melhor amigo, sempre carregando-o consigo nas consultas ao veterinário e em eventuais viagens com seu pet.
