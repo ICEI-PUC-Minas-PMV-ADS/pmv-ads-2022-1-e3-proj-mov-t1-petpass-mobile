@@ -196,6 +196,10 @@ A seguir encontr-se o diagrama de Gantt do projeto do Pet Pass mobile, utilizado
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
+A Gestão do Código Fonte e a Divisão de Papéis da equipe, bem como o ambiente utilizada para o gerenciamento de recursos, encontram-se detalhados no tópico de Metodologia.
+
+A seguir, é descrito o planejamento que auxiliará e direcionará a gestão de recursos durante o projeto.
+
 **Planejar o gerenciamento de recursos**					
 - Planejar como será feita a gestão de recursos do projeto					
 - Consultar opinião especializada sobre esse tipo de projeto					
@@ -230,9 +234,6 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 **Controlar os recursos**					
 - Informações sobre o desempenho e andamento do trabalho					
 - Atualizaçõe sobre o plano de gerenciamento derecursos
-					
-![image](https://user-images.githubusercontent.com/81052876/161451048-080fbfac-19fb-4038-9fdd-567508646c56.png)
-
 
 ## Gestão de Orçamento
 
