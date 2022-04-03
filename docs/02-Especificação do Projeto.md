@@ -116,7 +116,7 @@ A abordagem utilizada na priorização dos requisitos para o desenvolvimento do 
 
 Visto que esta é uma técnica bastante simples, é comum que sejam estabelecidos os níveis de prioridade de acordo com dois aspectos principais: importância e urgência. Assim, forma-se um quadrante, capaz de criar prioridades que combinem esses aspectos. A imagem a seguir ilustra essa divisão em quadrantes.
 
-![Classificação de Requisitos]()
+![Classificação de Requisitos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Cassificacao_requisitos.PNG?raw=true)
 
 ### Requisitos Funcionais
 
