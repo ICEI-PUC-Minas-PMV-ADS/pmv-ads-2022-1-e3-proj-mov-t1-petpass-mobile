@@ -73,14 +73,34 @@ Operacionalidade: É fácil de operar e controlar a funcionalidades da aplicaç�
 
 Estética da interface: A aplicação possui interface atual? Sim e Não.
 
+Inteligibilidade: A interface é de fácil entendimento? Sim e Não
+
 - **Portabilidade** :
 
 Adaptabilidade: O sistema esta adaptado a Android e IOS? Sim e Não.
 
 Facilidade de para ser instalado: É fácil instalar a aplicação em outros ambientes? Sim e Não.
 
+Conformidade: aderência a padrões de portabilidade? Sim e Não
+
 - **Confiabilidade** :
 
 Maturidade: Com que frequência a aplicação apresenta falhas? Sempre, As vezes e Nunca.
 
 Recuperabilidade: A aplicação é capaz de recuperar dados após uma falha? Sim e Não.
+
+Tolerância a falhas: reage bem às falhas que aparecem? Sim e Não
+
+- **Eficiência** :
+
+Tempo: Mínimo tempo de resposta? Sim e Não. Máxima velocidade de execução? Sim e Não
+
+Recursos utilizados: mínimo uso de recursos para o mesmo resultado? Sim e Não
+
+- **Manutenibilidade** :
+
+Modificabilidade: há facilidade em modificar o código? Sim e Não
+
+Testabilidade: há facilidade de testar a aplicação? Sim e Não
+
+
