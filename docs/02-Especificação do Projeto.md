@@ -82,7 +82,7 @@ Atualmente, o procedimento de registro oficial de um pet exige que o tutor leve 
 
 O fluxograma abaixo ilustra este processo:
 
-![Processo atual](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Processo%20sem%20o%20Pet%20Pass.PNG?raw=true)
+![Processo atual](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Processo%20sem%20o%20Pet%20Pass_.PNG?raw=true)
 
 ### Descrição Geral da Proposta
 
@@ -90,7 +90,7 @@ A proposta do Pet Pass mobile é tornar parte do processo de registro e acompanh
 
 O fluxograma abaixo ilustra o novo processo, utilizando o PetPass mobile como ferramenta:
 
-![Processo com o Pet Pass](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Processo%20com%20Pet%20Pass.PNG?raw=true)
+![Processo com o Pet Pass](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Processo%20com%20Pet%20Pass_.PNG?raw=true)
 
 Para entender melhor o funcionamento interno dos processos que ocorrem dentro do aplicativo do Pet Pass, foi elaborado um fluxograma de processo da aplicação.
 
