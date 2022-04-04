@@ -33,11 +33,11 @@ A imagem abaixo mostra uma visão geral dos Wireframes da aplicação Pet Pass e
 
 ![Telas Iniciais]()
 
-### Telas intermediárias:
+### Telas internas da aplicação:
 
 Dão uma visão geral da aplicação, após autenticação do usuário. Na imagem são mostradas três telas: a primeira mostra o ambiente do Pet Pass sem nenhum pet cadastrado; a segunda mostra a mesma tela, porém com diversos pets cadastrados; a terceira mostra a tela de visualização do perfil do usuário, onde este poderá também editar suas informações de cadastro.
 
-![Telas Intermediárias]()
+![Telas Internas]()
 
 ### Telas de cadastro:
 
@@ -47,42 +47,18 @@ São as telas onde serão feitos os cadatros dos pets e das vacinas. Nelas const
 
 ### Telas de edição:
 
-Tela que inicialmente convida o usuário a realizar o cadastro de um Pet. Após o cadastro é possível observar uma visualização resumida do perfil do Pet, contendo as opções de: visualização (detalhada), edição, exclusão e relatório do pet.
+São as telas onde poderão ser editadas as informações fornecidas no cadastro inicial do pet ou da vacina. O usuário poderar alterar os compos preenchidos inicialmente, com novas informações e depois salvar suas alterações.
 
 ![Telas de edição]()
 
 ### Telas de exclusão:
 
-Tela responsável pelo cadastro do perfil Pet, associado ao perfil do usuário, no sistema. Possui os atributos: nome, idade, raça, sexo, peso e a opção de escolha entre gato e cachorro.
+São as telas de confirmação de exclusão do perfil do pet, do perfil do usuário ou de uma vacina associada a um perfil de pet.
 
 ![Telas de exclusão]()
 
 ### Tela de Relatório:
 
-Tela que inicialmente convida o usuário a realizar o cadastro de uma vacina, associando-a a um Pet já cadastrado previamente por ele. Após o cadastro é possível observar uma visualização resumida do perfil do Pet relacionado à Vacina cadastrada, contendo as opções de: visualização (detalhada), edição, exclusão de vacina.
+Tela utilizada para gerar o relatório de vacinação do Pet selecionado. Na tela de visualização do perfil do Pet aparece um ícone para a geração do relatório com as informações registradas para aquele Pet naquele momento. O relatório poderá ser impresso ou compartilhado por e-mail ou whatsapp.
 
 ![Tela de Relatório]()
-
-### Tela Cadastrar Vacina:
-
-Tela responsável pela associação de uma vacina existente no banco de dados do sistema a um Pet previamente cadastrado, associado ao perfil do usuário, no sistema. Possui os atributos: nome do Pet, descrição da vacina, dose, data de aplicação e idade de aplicação.
-
-![Tela Cadastrar Pets](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t3-petpass/blob/main/docs/img/cadastrarVacinas.PNG?raw=true)
-
-### Tela Editar Perfil Pet:
-
-Tela responsável por realizar a edição dos dados cadastrados inicialmente no perfil Pet: alteração de nome, idade, raça, sexo, peso e a opção de escolha entre gato e cachorro.
-
-![Tela Editar Pet](img/ct11-editar-pet.png)
-
-### Tela Excluir Perfil Pet:
-
-Tela responsável por realizar a exclusão do perfil do Pet associado a um usuário no sistema.
-
-![Tela Excluir Pet](img/Teste07-et4.PNG)
-
-### Tela Gerar Relatório:
-
-Tela utilizada para gerar o relatório de vacinação do Pet selecionados.
-
-![Tela Gerar Relatório](img/Teste06-et4.PNG)
