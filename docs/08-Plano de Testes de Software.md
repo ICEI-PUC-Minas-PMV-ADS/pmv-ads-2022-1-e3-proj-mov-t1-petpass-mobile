@@ -26,28 +26,24 @@ RF-001: O sistema deverá permitir a criação de um perfil de usuário para o r
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar a homepage;
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Clicar no botão 'Cadastro';
 
-    4- Visualizar a homepage do site;
+    4- Visualizar a página de Cadastrar Usuário;
 
-    5- Clicar no botão 'Cadastro';
+    5- Visualizar os campos para preenchimento com os dados do usuário;
 
-    6- Visualizar a página de Cadastrar Usuário;
+    6- Preencher as informações a cada um dos campos e suas exigências;
 
-    7- Visualizar os compos para preenchimento com os dados do usuário;
-
-    8- Preencher as informações a cada um dos campos e suas exigências;
-
-    9- Clicar no botão de 'Criar';
+    7- Clicar no botão de 'Cadastrar';
 
 **Critérios de êxito:**
 
-- O usuário deve conseguir criar uma conta no site;
-- O usuário deve conseguir Logar na conta criada no site.
+- O usuário deve conseguir criar uma conta no app;
+- O usuário deve conseguir Logar na conta criada no app.
 
 ---
 
@@ -63,24 +59,20 @@ RF-001: O sistema deverá permitir a criação de um perfil de usuário para o r
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no app;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
-
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
-
-    7- Clicar no botão de Entrar;
+    5- Clicar no botão de Entrar;
 
 **Critérios de êxito:**
 
 - O usuário deve conseguir logar em sua conta;
-- O redirecionamento deverá levar o usuário para o DashBoard (Tela principal) da aplicação.
+- O redirecionamento deverá levar o usuário para a tela "Meus Pets" da aplicação.
 
 ---
 
@@ -88,7 +80,7 @@ RF-001: O sistema deverá permitir a criação de um perfil de usuário para o r
 
 **Objetivo do teste:**
 
-- Verificar a funcionalidade de criar um perfil de pet no site.
+- Verificar a funcionalidade de criar um perfil de pet no app.
 
 **Requisitos associados:**
 
@@ -96,29 +88,25 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no app;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Clicar na aba Pets e no botão ‘Cadastrar Pet’;
 
-    7- Clicar no botão de Entrar;
+    7- Informar os dados do pet: Nome, Idade, Cachorro/Gato, Raça, Sexo, Peso, Data de Nascimento e Registo;
 
-    8- Clicar na aba Pets e no botão ‘Adicionar Pet’ no menu à esquerda;
-
-    9- Informar os dados do pet: Nome, Idade, Cachorro/Gato, Raça, Sexo, Peso, Data de Nascimento e Registo;
-
-    10- Clicar no botão 'Adicionar'.
+    8- Clicar no botão 'Cadastrar'.
 
 **Critérios de êxito:**
 
-- O usuário deve conseguir criar um perfil de pet no site;
+- O usuário deve conseguir criar um perfil de pet no app;
 
 ---
 
@@ -134,21 +122,17 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 **Passos:**
 
-    1- Acessar o Navegador;
+*OBS: Esse teste deve ser feito somente após o cadastro de pelo menos um pet na conta do usuário.*
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    1- Acessar o aplicativo;
 
-    3- Clicar em 'ENTER' no teclado;
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    4- Preencher os campos com o e-mail e a senha cadastrados no app;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
-
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba 'Pets' no menu à esquerda para ser direcionado a página 'Meus Pets';
+    5- Clicar no botão de Entrar;
 
 **Critérios de êxito:**
 
@@ -168,25 +152,19 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Na tela Meus Pets', clicar no ícone 'visualizar' do pet desejado;
 
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba 'Pets' no menu à esquerda para ser direcionado a página 'Meus Pets';
-
-    9- Clicar no botão ‘Visualizar’ no perfil do pet desejado;
-
-    10- Clicar em ‘Voltar’ para retornar ao menu com o perfil geral de todos os pets cadastrados.
+    7- Clicar em ‘Voltar’ para retornar à tela 'Meus pets', com o perfil geral de todos os pets cadastrados.
 
 **Critérios de êxito:**
 
@@ -206,27 +184,19 @@ RF-003: O sistema deverá permitir gerar um relatório com as informações de s
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site *(https://petpass20211214211928.azurewebsites.net/)*;
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Na tela Meus Pets', clicar no ícone 'visualizar' do pet desejado;
 
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba 'Pets' no menu à esquerda para ser direcionado a página 'Meus Pets';
-
-    9- Clicar no botão ‘Relatório’ do perfil do pet desejado;
-
-    10- Clicar em ‘Voltar’ para retornar ao menu com o perfil geral de todos os pets cadastrados;
-
-    11- Clicar em ‘Imprimir’ para imprimir o relatório.
+    7- Clicar em 'Relatório'.
 
 **Critérios de êxito:**
 
@@ -247,29 +217,21 @@ RF-004: O sistema deverá permitir a exclusão do perfil do pet, sem excluir a c
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
+    
+    6- Na tela Meus Pets', clicar no ícone 'visualizar' do pet desejado;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Na tela do perfil do pet clicar no ícone de 'excluir pet';
 
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba 'Pets' no menu à esquerda para ser direcionado a página 'Meus Pets';
-
-    9- Clicar no botão ‘Deletar’ do perfil do pet desejado;
-
-    10- O usuário será direcionado para a página Delete;
-
-    11- Clicar no botão ‘Delete’ para confirmação da exclusão;
-
-    12- Visualizar a página Meus Pets atualizada;
+    7- Clicar em 'Excluir' na janela de confirmação.
 
 **Critérios de êxito:**
 
@@ -283,7 +245,7 @@ RF-004: O sistema deverá permitir a exclusão do perfil do pet, sem excluir a c
 
 **Objetivo do teste:**
 
-- Verificar a funcionalidade Excluir conta de usuário.
+- Verificar a funcionalidade 'Excluir conta de usuário'.
 
 **Requisitos associados:**
 
@@ -291,32 +253,26 @@ RF-005: O sistema deverá permitir a exclusão da conta de usuário responsável
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Na tela Meus Pets', clicar no ícone 'Perfil';
 
-    7- Clicar no botão de Entrar;
-
-    8- Visualizar a tela DashBoard, clicar no texto 'Olá, Usuário' no campo superior direito;
-
-    9- Visualizar a tela Editar Perfil e selecionar a opção 'Excluir Perfil';
-
-    10- Clicar em 'Confirmar' na tela de exclusão;
-
-    11- Visualizar a mensagem de confirmação;
+    7- Na tela do perfil do usuário, clicar em ‘Excluir’;
+    
+    8- Clicar em 'Excluir' na janela de confirmação.
 
 **Critérios de êxito:**
 
 - O usuário deve conseguir excluir a sua conta de usuário e os dos Pets associados;
-- O redirecionamento deverá levar para o DashBoard (Tela principal do site) da aplicação.
+- O redirecionamento deverá levar para a tela de login da aplicação.
 
 ---
 
@@ -334,15 +290,11 @@ RNF-001: O aplicativo deverá funcionar nos principais sistemas operacionais mob
 
     1- Acessar o aplicativo pelo smartphoe com sistema operacional Android e /ou IOS;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
-
-    3- Clicar em 'ENTER' no teclado;
-
     4- Visualizar na homepage do site e clicar no botão de 'Login';
 
     5- Visualizar os campos de e-mail e senha na Página de Login;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Preencher os campos com o e-mail e a senha cadastrados no app;
 
     7- Clicar no botão de Entrar;
 
@@ -366,27 +318,21 @@ RF-006: O sistema deverá permitir a edição das informações do usuário e do
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    6- Na tela Meus Pets', clicar no ícone 'Perfil';
 
-    7- Clicar no botão de Entrar;
-
-    8- Visualizar a tela DashBoard, clicar no texto 'Olá, Usuário' no campo superior direito;
-
-    9- Visualizar a tela Editar Perfil e alterar os campos desejados;
-
-    10- Clicar em 'Salvar' na tela de exclusão;
-
-    11- O usuário será direcionado para a tela de Detalhes;
+    7- Na tela do perfil do usuário, clicar em ‘Editar’;
+    
+    8- Editar os campos liberados e depois clicar em 'Salvar'.
 
 **Critérios de êxito:**
 
@@ -408,29 +354,21 @@ RF-006: O sistema deverá permitir a edição das informações do usuário e do
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
+    
+    6- Na tela Meus Pets', clicar no ícone 'editar' do pet desejado;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    7- Na tela do perfil do pet, editar os campos liberados;
 
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba ‘Pets’ no menu à esquerda;
-
-    9- Clicar na opção ‘Editar’ no perfil do pet desejado;
-
-    10- Alterar os dados desejados em cada campo específico;
-
-    11-  Clicar em 'Salvar alterações';
-
-    12- Caso deseje cancelar as alterações, clicar em 'Voltar'.
+    8- Clicar em 'Salvar'.
 
 **Critérios de êxito:**
 
@@ -451,27 +389,23 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 **Passos:**
 
-    1- Acessar o Navegador;
+    1- Acessar o aplicativo;
 
-    2- Informar o endereço do Site (https://petpass20211214211928.azurewebsites.net/);
+    2- Visualizar na homepage do app e clicar no botão de 'Login';
 
-    3- Clicar em 'ENTER' no teclado;
+    3- Visualizar os campos de e-mail e senha na Página de Login;
 
-    4- Visualizar na homepage do site e clicar no botão de 'Login';
+    4- Preencher os campos com o e-mail e a senha cadastrados no site;
 
-    5- Visualizar os campos de e-mail e senha na Página de Login;
+    5- Clicar no botão de Entrar;
+    
+    6- Na tela Meus Pets', clicar no ícone 'visualizar' do pet desejado;
 
-    6- Preencher os campos com o e-mail e a senha cadastrados no site;
+    7- Na tela do perfil do pet, clicar no ícone 'adicionar vacina';
 
-    7- Clicar no botão de Entrar;
-
-    8- Clicar na aba ‘Vacinas’ no menu à esquerda;
-
-    9- Clicar no botão ‘Adicionar Vacina’ e
-
-    10- Selecionar o perfil do pet desejado e preencher o restante dos campos solicitados;
-
-    11- Clicar em 'Salvar';
+    8- Preencher os campos requeridos na tela de cadastrar vacina;
+    
+    9- Clicar em 'Cadastrar'.
 
 **Critérios de êxito:**
 
@@ -489,4 +423,3 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 RF-007: O sistema deverá enviar notificações ao usuário assim que estiver próxima a data da próxima vacina de seu pet.
 
-**Passos:**
