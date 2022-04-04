@@ -23,7 +23,7 @@ A seguir, estão listados os parâmetros do Plano de Teste de Usabilidade que se
 - O método SUS utiliza um questionário de 10 perguntas para avaliar o grau de usabilidade da aplicação. 
 - Para cada uma das perguntas, o usuário poderá responder utilizando uma escala de 1 a 5, na qual 1 significa "Discordo Completamente" e 5 significa "Concordo Completamente".
 
-![Score Método SUS]()
+![Score Método SUS](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Score_metodo_SUS.PNG?raw=true)
 
 - O cálculo do resultado dos testes pelo método SUS será feito da seguinte maneira:
 
