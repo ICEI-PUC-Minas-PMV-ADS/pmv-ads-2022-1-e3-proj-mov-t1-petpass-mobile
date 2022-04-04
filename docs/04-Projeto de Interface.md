@@ -31,34 +31,34 @@ A imagem abaixo mostra uma visão geral dos Wireframes da aplicação Pet Pass e
 - **Tela de Login:** Tela responsável pela autenticação de clientes cadastrados no sistema. Caso o cliente tenha esquecido a senha de acesso ele será direcionado a tela para recuperação.
 - **Tela de Cadastro do Usuário:** Tela responsável pelo cadastro de novos usuários no sistema.
 
-![Telas Iniciais]()
+![Telas Iniciais](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20iniciais.PNG?raw=true)
 
 ### Telas internas da aplicação:
 
 Dão uma visão geral da aplicação, após autenticação do usuário. Na imagem são mostradas três telas: a primeira mostra o ambiente do Pet Pass sem nenhum pet cadastrado; a segunda mostra a mesma tela, porém com diversos pets cadastrados; a terceira mostra a tela de visualização do perfil do usuário, onde este poderá também editar suas informações de cadastro.
 
-![Telas Internas]()
+![Telas Internas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20intermed.PNG?raw=true)
 
 ### Telas de cadastro:
 
 São as telas onde serão feitos os cadatros dos pets e das vacinas. Nelas constam todos os campos para preenchimento das informações necessárias para criar o perfil do pet e sua carteira vacinal.
 
-![Telas de cadastro]()
+![Telas de cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20de%20cadastro.PNG?raw=true)
 
 ### Telas de edição:
 
 São as telas onde poderão ser editadas as informações fornecidas no cadastro inicial do pet ou da vacina. O usuário poderar alterar os compos preenchidos inicialmente, com novas informações e depois salvar suas alterações.
 
-![Telas de edição]()
+![Telas de edição](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20de%20edi%C3%A7%C3%A3o.PNG?raw=true)
 
 ### Telas de exclusão:
 
 São as telas de confirmação de exclusão do perfil do pet, do perfil do usuário ou de uma vacina associada a um perfil de pet.
 
-![Telas de exclusão]()
+![Telas de exclusão](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20de%20exclus%C3%A3o.PNG?raw=true)
 
 ### Tela de Relatório:
 
 Tela utilizada para gerar o relatório de vacinação do Pet selecionado. Na tela de visualização do perfil do Pet aparece um ícone para a geração do relatório com as informações registradas para aquele Pet naquele momento. O relatório poderá ser impresso ou compartilhado por e-mail ou whatsapp.
 
-![Tela de Relatório]()
+![Tela de Relatório](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Tela%20do%20Relat%C3%B3rio.PNG?raw=true)
