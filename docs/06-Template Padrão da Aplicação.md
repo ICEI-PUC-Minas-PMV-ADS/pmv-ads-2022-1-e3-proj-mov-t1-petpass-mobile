@@ -6,7 +6,8 @@ O aplicativo do Pet Pass apresenta dois templates padrão. Um para as telas inic
 
 Segue abaixo o template padrão das telas iniciais.
 
+![Template padrão_1]()
 
 Segue abaixo o template padrão das telas internas da aplicação.
 
-
+![Template padrão_2]()
