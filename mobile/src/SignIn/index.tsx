@@ -5,18 +5,13 @@ import {
   Image,
 } from 'react-native';
 
-import HomePng from '../../assets/HomePngG.png';
+import HomePng from '../assets/HomePng.png';
 import { styles } from './styles';
 
-import { ButtonIcon } from '../../components/ButtonIcon';
-import { Background } from '../../components/Background';
+import { ButtonIcon } from '../components/ButtonIcon';
+import { Background } from '../components/Background';
 
-export function SignIn(navigation: { navigate: (arg0: string) => void; }){
-
-  function handleSignIn() {
-    navigation.navigate('CreateAccount');
-  }
-
+export function SignIn(){
   return(
     <Background>
       <View style={styles.container}>
@@ -39,7 +34,6 @@ export function SignIn(navigation: { navigate: (arg0: string) => void; }){
 
             <ButtonIcon
               title="Entrar com Email"
-              onPress={handleSignIn}
             />
         </View>
       </View>
