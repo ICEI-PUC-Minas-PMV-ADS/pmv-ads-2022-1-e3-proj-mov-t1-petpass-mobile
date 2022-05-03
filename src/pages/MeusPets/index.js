@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { StyleSheet, Text, View,Image, ScrollView, TouchableOpacity } from 'react-native';
-import { Entypo, Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons'
 import api from "../../api/api";
 
 
@@ -11,42 +11,36 @@ export default function MeusPets() {
   useEffect(() => {
    api.get('/pets').then((res) => setPets(res.data))
   }, [])
-console.log('pets aqui', pets?.map((item) => item.name))
+
 
   return (
     <View style={styles.container}>
 <ScrollView>
-      <View style={styles.box}>
-
-        <Image style={styles.img} source={require('../../../img/dog.jpg')}/>
+  {pets?.length !== 0 ? (
+      <>
         {pets?.map((item) => (
-          <View>
-            <Text style={styles.nome}>{item.name}</Text>
-            <Text style={styles.raça}>Raça: {item.raca}</Text>
-          </View>
+            <View style={styles.box}>
+              <Image style={styles.img} source={require('../../../img/dog.jpg')}/>
+
+              <View>
+                <Text style={styles.nome}>{item.name}</Text>
+                <Text style={styles.raça}>Raça: {item.raca}</Text>
+              </View>
+
+
+              <View style={styles.icon}>
+                <Feather name="eye" size={25}/>
+
+              </View>
+            </View>
         ))}
+      </>
+  ) : (
+          <Text>Você não tem nenhum pet</Text>
+  )}
 
-          <View style={styles.icon}> 
-          <Feather name="eye" size={25}/>
-            
-      </View>
 
-      </View>
-
-      <View style={styles.box}>
-
-        <Image style={styles.img} source={require('../../../img/gato.jpg')}/>
-          <View>
-            <Text style={styles.nome}>Bethoveen</Text>
-            <Text style={styles.raça}>Raça: Husk Siberiano</Text>
-          </View>
-          <View style={styles.icon}> 
-            <Feather name="eye" size={25}/>
-          </View>
-          
-      </View>
-
-     </ScrollView> 
+     </ScrollView>
 
      <TouchableOpacity onPress={() => handleAddPet()}>
                 <View style={styles.addPet}>
