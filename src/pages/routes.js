@@ -5,6 +5,8 @@ import MeusPets from './MeusPets/index';
 import Profile from './Profile/index';
 import { Entypo, Feather } from '@expo/vector-icons'
 import Presentation from "./presentation/Presentation";
+import {CreateAccount} from "./CreateAccount/CreateAccount";
+import {Login} from "./Login/Login";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -17,7 +19,8 @@ export default function Routes(){
         {!teste ? (
                     <Stack.Navigator>
                         <Stack.Screen name="Home" component={Presentation} />
-                        <Stack.Screen name="seila" component={Presentation} />
+                        <Stack.Screen name="Criar conta" component={CreateAccount} />
+                        <Stack.Screen name="Login" component={Login} />
                     </Stack.Navigator>
         ) : (
             <>

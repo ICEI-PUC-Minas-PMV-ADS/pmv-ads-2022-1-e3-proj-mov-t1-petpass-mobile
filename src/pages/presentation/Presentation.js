@@ -28,7 +28,7 @@ const Presentation = ({navigation}) => {
 
                 <Button
                     title="Entrar com Email"
-                    onPress={() => navigation.navigate('seila')}
+                    onPress={() => navigation.navigate('Login')}
                 />
             </View>
         </View>
