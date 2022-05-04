@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.2.0",
-    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/native-stack": "^6.6.2",
     "axios": "^0.27.2",
     "expo": "~44.0.2",
+    "expo-linear-gradient": "^11.0.3",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "json-server": "^0.17.0",
