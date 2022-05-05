@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     View,
     Text,
@@ -11,9 +11,23 @@ import { styles } from './styles'
 
 import { Background } from '../../Components/Background/background';
 import {Button, TextInput} from "react-native-web";
+import api from "../../api/api";
+import useUser from "../../store/user";
 
 
 export function Login({navigation}){
+    const {setIsUser} = useUser()
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+console.log(email, password)
+    const HandleSubmitLogin = (e) => {
+        e.preventDefault()
+
+        api.post('http://localhost:8000/auth/login', {email, password}).then(() => navigation.navigate('Perfil'))
+    }
+
+
     return(
         <Background>
             <View style={styles.container}>
@@ -34,7 +48,7 @@ export function Login({navigation}){
                         </Text>
 
                         <View style={styles.column}>
-                            <TextInput placeholder={"Digite seu Email"} style={styles.TextInput}/>
+                            <TextInput placeholder={"Digite seu Email"} style={styles.TextInput} onChangeText={setEmail}/>
                         </View>
                     </View>
                     <View>
@@ -43,12 +57,13 @@ export function Login({navigation}){
                         </Text>
 
                         <View style={styles.column}>
-                            <TextInput placeholder={"Digite sua senha"} style={styles.TextInput}/>
+                            <TextInput placeholder={"Digite sua senha"} style={styles.TextInput} onChangeText={setPassword}/>
                         </View>
                     </View>
                     <View style={{marginTop: 15, }}>
                         <Button
                             title="Entrar com Email"
+                            onPress={HandleSubmitLogin}
                         />
                     </View>
                     <View style={{marginTop: 15, marginBottom: 90}}>

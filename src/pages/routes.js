@@ -7,16 +7,19 @@ import { Entypo, Feather } from '@expo/vector-icons'
 import Presentation from "./presentation/Presentation";
 import {CreateAccount} from "./CreateAccount/CreateAccount";
 import {Login} from "./Login/Login";
+import useUser from "../store/user";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 export default function Routes(){
 
-    const [teste, setTeste] = useState(false)
+    const {user} = useUser()
+
+    console.log('teste', user)
     return(
         <>
-        {!teste ? (
+        {!user ? (
                     <Stack.Navigator>
                         <Stack.Screen name="Home" component={Presentation} />
                         <Stack.Screen name="Criar conta" component={CreateAccount} />
@@ -24,6 +27,11 @@ export default function Routes(){
                     </Stack.Navigator>
         ) : (
             <>
+                <Stack.Navigator>
+                    <Stack.Screen name="Home" component={Presentation} />
+                    <Stack.Screen name="Criar conta" component={CreateAccount} />
+                    <Stack.Screen name="Login" component={Login} />
+                </Stack.Navigator>
                 <Tab.Navigator
                     screenOptions={{
                         tabBarStyle:{
