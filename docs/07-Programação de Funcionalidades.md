@@ -22,7 +22,9 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
   Tive problemas na parte de integração do react-native com bibliotecas externas para gerar as rotas.
   
   Tela Real
+  
   ![Tela Meus Pets](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/printTela-MeusPets.png?raw=true)
   
   Tela Figma
+  
   ![Telas Internas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20intermed.PNG?raw=true)
