@@ -6,6 +6,7 @@ import Profile from './Profile/index';
 import { Entypo, Feather } from '@expo/vector-icons'
 import Presentation from "./presentation/Presentation";
 import {CreateAccount} from "./CreateAccount/CreateAccount";
+import CadastrarPet from "./CadastrarPet/CadastrarPet";
 import {Login} from "./Login/Login";
 
 const Tab = createBottomTabNavigator();
@@ -21,6 +22,7 @@ export default function Routes(){
                         <Stack.Screen name="Home" component={Presentation} />
                         <Stack.Screen name="Criar conta" component={CreateAccount} />
                         <Stack.Screen name="Login" component={Login} />
+                        <Stack.Screen name="Cadastrar Pets" component={CadastrarPet} />
                     </Stack.Navigator>
         ) : (
             <>
