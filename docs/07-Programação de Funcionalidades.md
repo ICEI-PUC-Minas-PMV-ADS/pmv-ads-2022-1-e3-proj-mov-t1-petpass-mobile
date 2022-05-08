@@ -4,15 +4,7 @@
 
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
-***Etapa 3:***
-
-**Luisa Oliveira**: Nessa etapa fiquei responsável por desenvolver a tela Cadastrar Pets da aplicação.  Utilizei o Expo para desenvolver o código da tela além do que foi ensinado nas aulas de desenvolvimento de aplicação móveis e a documentação da framework. 
-Minha maior dificuldade foi migrar o código para  o VS Code pois foi necessário atualizar diversas dependências.
-O código da tela Cadastrar Pet ainda é básico, sendo necessário trabalhar as funcionalidade e estilo da aplicação.
-
-![Tela Castrar Pets](img/TelaCadastrarPets.PNG)
-
-
+Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 > **Links Úteis**:
 >
@@ -21,3 +13,16 @@ O código da tela Cadastrar Pet ainda é básico, sendo necessário trabalhar as
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+
+
+# Evolução do projeto
+
+### Arthur Fernandes: 
+  Fui responsavel por implementar a funcionalidade de rotas da aplicação e a parte de listagem de pets cadastrados.
+  Tive problemas na parte de integração do react-native com bibliotecas externas para gerar as rotas.
+  
+  Tela Real
+  ![Tela Meus Pets](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/printTela-MeusPets.png?raw=true)
+  
+  Tela Figma
+  ![Telas Internas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20intermed.PNG?raw=true)
