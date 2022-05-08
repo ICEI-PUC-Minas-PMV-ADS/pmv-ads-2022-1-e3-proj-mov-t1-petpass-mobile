@@ -28,3 +28,18 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
   Tela Figma
   
   ![Telas Internas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20intermed.PNG?raw=true)
+  
+  ### Luisa Helena: 
+  Nessa etapa fiquei responsável por desenvolver a tela Cadastrar Pets da aplicação.  
+  Utilizei o Expo para desenvolver o código inicial da tela e posteriormente migrei para o VS Code. Tive muita dificuldade nessa parte pois foi necessário atualizar diversas dependências.
+
+Link video: https://www.youtube.com/watch?v=bT-hR4o5XTE
+  
+  Tela Real
+  
+ ![Tela Castrar Pets](img/TelaCadastrarPets.PNG)
+  
+  Tela Figma
+  
+  ![Tela Castrar Pets](img/TemplateCadastrarPets.PNG)
+  
