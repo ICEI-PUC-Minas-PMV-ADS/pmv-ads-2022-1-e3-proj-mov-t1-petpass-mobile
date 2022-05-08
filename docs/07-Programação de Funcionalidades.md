@@ -37,9 +37,9 @@ Link video: https://www.youtube.com/watch?v=bT-hR4o5XTE
   
   Tela Real
   
- ![Tela Castrar Pets](img/TelaCadastrarPets.PNG)
+ ![Tela Castrar Pets](img/TelaCadastrarPet.PNG)
   
   Tela Figma
   
-  ![Tela Castrar Pets](img/TemplateCadastrarPets.PNG)
+  ![Tela Castrar Pets](img/TemplateCadastrarPet.PNG)
   
