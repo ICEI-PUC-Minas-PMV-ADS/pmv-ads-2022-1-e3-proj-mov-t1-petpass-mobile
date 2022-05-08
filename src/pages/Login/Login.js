@@ -12,19 +12,16 @@ import { styles } from './styles'
 import { Background } from '../../Components/Background/background';
 import {Button, TextInput} from "react-native-web";
 import api from "../../api/api";
-import useUser from "../../store/user";
 
 
 export function Login({navigation}){
-    const {setIsUser} = useUser()
-
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 console.log(email, password)
     const HandleSubmitLogin = (e) => {
         e.preventDefault()
 
-        api.post('http://localhost:8000/auth/login', {email, password}).then(() => navigation.navigate('Perfil'))
+        api.post('http://localhost:8000/auth/login', {email, password}).then(() => navigation.navigate('Home'))
     }
 
 
