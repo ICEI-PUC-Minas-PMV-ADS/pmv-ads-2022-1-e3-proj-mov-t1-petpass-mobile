@@ -69,6 +69,12 @@ console.log(email, password)
                             onPress={() => navigation.navigate('Criar conta')}
                         />
                     </View>
+                    <View style={{marginTop: 15, marginBottom: 90}}>
+                        <Button
+                            title="Cadastrar meu pet"
+                            onPress={() => navigation.navigate('Cadastrar Pets')}
+                        />
+                    </View>
                 </View>
             </View>
         </Background>
