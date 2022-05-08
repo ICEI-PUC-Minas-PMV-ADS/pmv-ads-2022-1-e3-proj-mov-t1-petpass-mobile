@@ -13,3 +13,10 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+
+
+# Evolução do projeto
+
+### Arthur Fernandes: 
+  Fui responsavel por implementar a funcionalidade de rotas da aplicação e a parte de listagem de pets cadastrados.
+  Tive problemas na parte de integração do react-native com bibliotecas externas para gerar as rotas.
