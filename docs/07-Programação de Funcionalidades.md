@@ -49,8 +49,8 @@ Link video: https://www.youtube.com/watch?v=bT-hR4o5XTE
 
   Tela Real
   
- ![Tela Castrar Vacina](img/Tela cadastrar vacina.png)
-  
+ ![Tela Castrar Vacina](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/21baf8ce551a18f52d897f484d685237108bedc1/docs/img/Tela%20cadastrar%20vacina.png)
+ 
   Tela Figma
   
   ![Tela Castrar Vacina Figma]
