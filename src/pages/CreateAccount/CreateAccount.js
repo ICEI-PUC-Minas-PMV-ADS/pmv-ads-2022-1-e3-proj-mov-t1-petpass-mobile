@@ -15,7 +15,12 @@ export function CreateAccount({ navigation }) {
 
   const handleCreateAccount = () => {
     api
-      .post("http://localhost:8000/auth/register", { name, email, password })
+      .post("http://localhost:8000/auth/register", {
+        name,
+        email,
+        password,
+        pets: [],
+      })
       .then(() => navigation.navigate("Login"));
   };
 

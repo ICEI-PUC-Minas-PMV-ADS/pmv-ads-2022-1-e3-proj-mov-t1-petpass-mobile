@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { View, Text, Image } from "react-native";
 
 import Union from "../../assets/Union.png";
@@ -7,17 +7,18 @@ import { styles } from "./styles";
 import { Background } from "../../Components/Background/background";
 import { Button, TextInput } from "react-native-web";
 import api from "../../api/api";
+import PlanContext from "../../Hooks/login";
 
 export function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const { setPlanState } = useContext(PlanContext);
   const HandleSubmitLogin = (e) => {
     e.preventDefault();
 
     api
       .post("http://localhost:8000/auth/login", { email, password })
-      .then(() => navigation.navigate("Home"));
+      .then(() => setPlanState(true));
   };
 
   return (
