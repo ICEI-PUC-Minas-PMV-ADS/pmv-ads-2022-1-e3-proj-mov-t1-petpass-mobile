@@ -18,7 +18,7 @@ export default function Routes(){
     return(
         <>
         {/* ! */}
-        {teste ? (
+        {!teste ? (
                     <Stack.Navigator>
                         <Stack.Screen name="Home" component={Presentation} options={{header:() => null}} />
                         <Stack.Screen name="Criar conta" component={CreateAccount} options={{header:() => null}} />
