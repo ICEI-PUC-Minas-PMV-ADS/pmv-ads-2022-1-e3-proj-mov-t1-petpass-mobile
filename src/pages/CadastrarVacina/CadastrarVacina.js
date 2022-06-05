@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import { View, ScrollView } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 
-const CadastrarVacina = ({ navigation }) => {
+const CadastrarVacina = () => {
   const [nome, setNome] = useState("");
   const [vacina, setVacina] = useState("");
   const [idade, setIdade] = useState("");
-  const [data, setData] = useState("");
+  const [date, setData] = useState("");
   const [dose, setDose] = useState("");
 
-  const onSubmit = async ({ formData }) => {
+  const onSubmit = async () => {
     let token = await AsyncStorage.getItem("token");
 
     const data = new FormData();
-    data.append("nome", { input: nome });
-    data.append("vacina", { input: vacina });
-    data.append("idade", { input: idade });
-    data.append("data", { input: data });
-    data.append("dose", { input: dose });
+    data.append("nome", nome);
+    data.append("vacina", vacina);
+    data.append("idade", idade);
+    data.append("date", date);
+    data.append("dose", dose);
 
     axios
-      .post("api", data, {
+      .post("/api", data, {
         headers: {
           Authorization: `Bearer ${token}`,
           Accept: "application/json",
@@ -60,7 +60,7 @@ const CadastrarVacina = ({ navigation }) => {
         />
         <TextInput
           label="Data de aplicação"
-          value={data}
+          value={date}
           onChangeText={(text) => setData(text)}
         />
         <TextInput
@@ -69,10 +69,11 @@ const CadastrarVacina = ({ navigation }) => {
           onChangeText={(text) => setDose(text)}
         />
 
-        <Button
-          title={"Cadastrar vacina"}
-          onPress={() => onSubmit({ formData })}
-        />
+        <Button mode="contained" onPress={() => console.log("Pressed")}>
+          Cadastrar
+        </Button>
+
+        <Button title={"Cadastrar vacina"} onPress={() => onSubmit()} />
       </ScrollView>
     </View>
   );
