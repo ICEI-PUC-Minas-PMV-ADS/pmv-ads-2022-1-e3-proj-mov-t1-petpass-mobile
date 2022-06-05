@@ -37,11 +37,20 @@ Link video: https://www.youtube.com/watch?v=bT-hR4o5XTE
   
   Tela Real
   
- ![Tela Castrar Pets](img/TelaCadastrarPet.PNG)
+ ![Tela Cadastrar Pets](img/TelaCadastrarPet.PNG)
   
   Tela Figma
   
-  ![Tela Castrar Pets](img/TemplateCadastrarPet.PNG)
+  ![Tela Cadastrar Pets](img/TemplateCadastrarPet.PNG)
+  
+  Tela em 05/06/2022: 
+
+Em relaçao a etapa anterior foram realizados ajustes de estilo na página.
+
+![Tela Cadastrar Pets](img/CadastrarPet_Etapa4.PNG)
+
+Link do vídeo: https://youtu.be/-k5vpC0lOu4
+  
   
   ### Aline Silva: 
   Fui responsável por desenvolver a tela Cadastrar Vacinas.  
