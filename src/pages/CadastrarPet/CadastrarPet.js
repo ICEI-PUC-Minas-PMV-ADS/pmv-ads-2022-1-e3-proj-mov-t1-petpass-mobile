@@ -1,72 +1,91 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, TouchableOpacity, ScrollView } from 'react-native';
-import { Appbar, TextInput, Button, Text, List } from 'react-native-paper';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import moment from 'moment';
-import api from '../../api/api';
-import { useNavigation } from '@react-navigation/native';
-
+import React, { useState } from "react";
+import { StyleSheet, View, TouchableOpacity, ScrollView } from "react-native";
+import { Appbar, TextInput, Button, Text, List } from "react-native-paper";
+import DateTimePicker from "@react-native-community/datetimepicker";
+import moment from "moment";
+import api from "../../api/api";
+import { useNavigation } from "@react-navigation/native";
 
 const CadastrarPet = () => {
-  
-  const [name, setNome] = useState('');
-  const [tipo, setTipo] = useState('');
-  const [sexo, setSexo] = useState('');
-  const [raca, setRaca] = useState('');
-  const [peso, setPeso] = useState('');
-  const [idade, setIdade] = useState('');
+  const [name, setNome] = useState("");
+  const [tipo, setTipo] = useState("");
+  const [sexo, setSexo] = useState("");
+  const [raca, setRaca] = useState("");
+  const [peso, setPeso] = useState("");
+  const [idade, setIdade] = useState("");
 
-  const [showDataNascimentoPicker, setShowDataNascimentoPicker] = useState(false);
+  const [showDataNascimentoPicker, setShowDataNascimentoPicker] =
+    useState(false);
   const [showDataRegistroPicker, setShowDataRegistroPicker] = useState(false);
 
   const [dataNascimento, setDataNascimento] = useState(new Date());
   const [dataRegistro, setDataRegistro] = useState(new Date());
 
-  const [tipoExpanded, setTipoExpanded] = useState(false); 
+  const [tipoExpanded, setTipoExpanded] = useState(false);
   const [sexoExpanded, setSexoExpanded] = useState(false);
 
   const navigation = useNavigation();
 
-  const dataCreatePet = { name,tipo,sexo,raca,peso,idade,dataNascimento,dataRegistro } 
+  const dataCreatePet = {
+    name,
+    tipo,
+    sexo,
+    raca,
+    peso,
+    idade,
+    dataNascimento,
+    dataRegistro,
+  };
   const handleCreatePet = () => {
     setTimeout(() => {
-      api.post('/pets' , dataCreatePet)
-      .then(() => navigation.navigate('Meus Pets'))
-      .catch((err) => console.error(err));
-
-    }, 1000)
-    
-  }
+      api
+        .post("/pets", dataCreatePet)
+        .then(() => navigation.navigate("Meus Pets"))
+        .catch((err) => console.error(err));
+    }, 1000);
+  };
 
   return (
-    <View>
-       <ScrollView>
+    <View
+      style={{
+        flex: 1,
+        marginTop: 10,
+        justifyContent: "center",
+        paddingHorizontal: 20,
+      }}
+    >
+      <ScrollView>
         <TextInput
           label="Nome"
           value={name}
           onChangeText={(text) => setNome(text)}
         />
         <List.Section title="Tipo">
-          <List.Accordion 
+          <List.Accordion
             title={tipo}
             expanded={tipoExpanded}
             onPress={() => setTipoExpanded(!tipoExpanded)}
-            left={props => <List.Icon {...props} icon="paw" />}>
-            <List.Item title="Cachorro" onPress={(text) => setTipo('Cachorro')}/>
-            <List.Item title="Gato" onPress={(text) => setTipo('Gato')} />
+            left={(props) => <List.Icon {...props} icon="paw" />}
+          >
+            <List.Item
+              title="Cachorro"
+              onPress={(text) => setTipo("Cachorro")}
+            />
+            <List.Item title="Gato" onPress={(text) => setTipo("Gato")} />
           </List.Accordion>
         </List.Section>
 
-      <List.Section title="Sexo">
-        <List.Accordion
+        <List.Section title="Sexo">
+          <List.Accordion
             title={sexo}
             expanded={sexoExpanded}
             onPress={() => setSexoExpanded(!sexoExpanded)}
-            left={props => <List.Icon {...props} icon="gender-male-female" />}>
-          <List.Item title="Macho" onPress={(text) => setSexo('Macho')} />
-          <List.Item title="Femea" onPress={(text) => setSexo('Femea')} />
-        </List.Accordion>
-      </List.Section>
+            left={(props) => <List.Icon {...props} icon="gender-male-female" />}
+          >
+            <List.Item title="Macho" onPress={(text) => setSexo("Macho")} />
+            <List.Item title="Femea" onPress={(text) => setSexo("Femea")} />
+          </List.Accordion>
+        </List.Section>
 
         <TextInput
           label="Raça"
@@ -87,7 +106,7 @@ const CadastrarPet = () => {
           <DateTimePicker
             testID="dateTimeNascimentoPicker"
             value={dataNascimento}
-            mode={'date'}
+            mode={"date"}
             is24Hour={true}
             display="default"
             onTouchCancel={() => setShowDataNascimentoPicker(false)}
@@ -97,11 +116,11 @@ const CadastrarPet = () => {
             }}
           />
         )}
-        {showDataRegistroPicker && ( 
+        {showDataRegistroPicker && (
           <DateTimePicker
             testID="dateTimeRegistroPicker"
             value={dataRegistro}
-            mode={'date'}
+            mode={"date"}
             is24Hour={true}
             display="default"
             onTouchCancel={() => setShowDataRegistroPicker(false)}
@@ -114,7 +133,7 @@ const CadastrarPet = () => {
         <TouchableOpacity onPress={() => setShowDataNascimentoPicker(true)}>
           <TextInput
             label="Data de Nascimento"
-            value={moment(dataNascimento).format('DD/MM/YYYY')}
+            value={moment(dataNascimento).format("DD/MM/YYYY")}
             left={<TextInput.Icon name="calendar" />}
             onChangeText={(text) => setDataNascimento(text)}
             editable={false}
@@ -123,19 +142,26 @@ const CadastrarPet = () => {
         <TouchableOpacity onPress={() => setShowDataRegistroPicker(true)}>
           <TextInput
             label="Data de Registro"
-            value={moment(dataRegistro).format('DD/MM/YYYY')}
+            value={moment(dataRegistro).format("DD/MM/YYYY")}
             left={<TextInput.Icon name="calendar" />}
             onChangeText={(text) => setDataRegistro(text)}
             editable={false}
           />
         </TouchableOpacity>
-        <Button mode="contained"  onPress={() => handleCreatePet()}>
-          Cadastrar
-        </Button>
-         </ScrollView>
+        <View style={{ justifyContent: "center", paddingHorizontal: 40 }}>
+          <Button
+            mode="contained"
+            style={{
+              marginTop: 30,
+            }}
+            onPress={() => handleCreatePet()}
+          >
+            Cadastrar
+          </Button>
+        </View>
+      </ScrollView>
     </View>
   );
 };
-
 
 export default CadastrarPet;
