@@ -29,6 +29,12 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
   
   ![Telas Internas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/main/docs/img/Telas%20intermed.PNG?raw=true)
   
+  Tela em 05/06/2022:
+  
+  Em relação a etapa anterior foram adicionadas novas funcionalidades e uma nova rota para cadastro de pets.
+  
+  ![Tela Meus Pets](img/MeusPets - Etapa4.jpeg)
+  
   ### Luisa Helena: 
   Nessa etapa fiquei responsável por desenvolver a tela Cadastrar Pets da aplicação.  
   Utilizei o Expo para desenvolver o código inicial da tela e posteriormente migrei para o VS Code. Tive muita dificuldade nessa parte pois foi necessário atualizar diversas dependências.
