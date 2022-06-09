@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MeusPets from "./MeusPets/index";
@@ -20,7 +20,7 @@ export default function Routes() {
   return (
     <>
       {/* ! */}
-      {!planState ? (
+      {planState ? (
         <Stack.Navigator>
           <Stack.Screen
             name="Home"
