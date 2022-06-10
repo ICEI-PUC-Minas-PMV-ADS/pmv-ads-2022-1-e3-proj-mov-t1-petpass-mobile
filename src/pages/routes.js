@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MeusPets from "./MeusPets/index";
 import Profile from "./Profile/index";
+import MeusPetsInfo from "./MeusPetsInfo/index";
 import { Entypo, Feather } from "@expo/vector-icons";
 import Presentation from "./presentation/Presentation";
 import { CreateAccount } from "./CreateAccount/CreateAccount";
@@ -80,6 +81,18 @@ export default function Routes() {
                 ),
               }}
             />
+
+            <Tab.Screen
+              name="InfoPet"
+              component={MeusPetsInfo}
+              options={{
+                tabBarButton:() => null,
+                tabBarIcon: ({ size, color }) => (
+                  <Feather name="user" size={size} color={color} />
+                ),
+              }}
+            />
+
           </Tab.Navigator>
         </>
       )}
