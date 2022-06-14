@@ -1,25 +1,49 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, TouchableOpacity, ScrollView } from 'react-native';
-import { Appbar, TextInput, Button, Text, List } from 'react-native-paper';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import moment from 'moment';
+import React, { useState } from "react";
+import { StyleSheet, View, TouchableOpacity, ScrollView } from "react-native";
+import { Appbar, TextInput, Button, Text, List } from "react-native-paper";
+import DateTimePicker from "@react-native-community/datetimepicker";
+import moment from "moment";
+import api from "../../api/api";
+import { useNavigation } from "@react-navigation/native";
 
 const CadastrarPet = () => {
-  const [nome, setNome] = useState('');
-  const [tipo, setTipo] = useState('');
-  const [sexo, setSexo] = useState('');
-  const [raca, setRaca] = useState('');
-  const [peso, setPeso] = useState('');
-  const [idade, setIdade] = useState('');
+  const [nome, setNome] = useState("");
+  const [tipo, setTipo] = useState("");
+  const [sexo, setSexo] = useState("");
+  const [raca, setRaca] = useState("");
+  const [peso, setPeso] = useState("");
+  const [idade, setIdade] = useState("");
 
-  const [showDataNascimentoPicker, setShowDataNascimentoPicker] = useState(false);
+  const [showDataNascimentoPicker, setShowDataNascimentoPicker] =
+    useState(false);
   const [showDataRegistroPicker, setShowDataRegistroPicker] = useState(false);
 
   const [dataNascimento, setDataNascimento] = useState(new Date());
   const [dataRegistro, setDataRegistro] = useState(new Date());
 
-  const [tipoExpanded, setTipoExpanded] = useState(false); 
+  const [tipoExpanded, setTipoExpanded] = useState(false);
   const [sexoExpanded, setSexoExpanded] = useState(false);
+
+  const navigation = useNavigation();
+
+  const dataCreatePet = {
+    nome,
+    tipo,
+    sexo,
+    raca,
+    peso,
+    idade,
+    dataNascimento,
+    dataRegistro,
+  };
+  const handleCreatePet = () => {
+    setTimeout(() => {
+      api
+        .post("/pets", dataCreatePet)
+        .then(() => navigation.navigate("Meus Pets"))
+        .catch((err) => console.error(err));
+    }, 1000);
+  };
 
   return (
     <View style={styles.container}>
@@ -27,7 +51,7 @@ const CadastrarPet = () => {
         <ScrollView>
           <TextInput
             label="Nome"
-            value={name}
+            value={nome}
             onChangeText={(text) => setNome(text)}
           />
           <List.Section title="Tipo">

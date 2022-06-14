@@ -5,7 +5,7 @@ import MeusPets from "./MeusPets/index";
 import Profile from "./Profile/index";
 import { Entypo, Feather, FontAwesome5 } from "@expo/vector-icons";
 import Presentation from "./presentation/Presentation";
-import {CreateAccount} from "./CreateAccount/CreateAccount";
+import { CreateAccount } from "./CreateAccount/CreateAccount";
 import CadastrarPet from "./CadastrarPet/CadastrarPet";
 import { Login } from "./Login/Login";
 import CadastrarVacina from "./CadastrarVacina/CadastrarVacina";
@@ -17,9 +17,10 @@ const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
+  const { planState } = useContext(GlobalContext);
 
   return (
-    <> 
+    <>
       {/* ! */}
       {planState ? (
         <Stack.Navigator>
@@ -95,7 +96,7 @@ export default function Routes() {
                 title: "Cadastrar Vacina",
               }}
             />
-            
+
             <Tab.Screen
               name="ListaVacinas"
               component={ListaVacinas}
@@ -108,5 +109,7 @@ export default function Routes() {
             />
           </Tab.Navigator>
         </>
-    )
+      )}
+    </>
+  );
 }

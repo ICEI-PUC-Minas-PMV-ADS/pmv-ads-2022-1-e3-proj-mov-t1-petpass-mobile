@@ -3,20 +3,22 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   ScrollView,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import { Feather, FontAwesome5 } from "@expo/vector-icons";
 import api from "../../api/api";
 import { useNavigation, useIsFocused } from "@react-navigation/native";
 
-export default function MeusPets() {
-  const [pets, setPets] = useState();
+export default function ListaVacinas({ route }) {
+  const { petId } = route.params;
+
+  const [vacina, setVacina] = useState();
   const isFocused = useIsFocused();
 
   useEffect(() => {
-    api.get("/pets").then((res) => setPets(res.data));
+    api.get(`/pets/${petId}/vacinas`).then((res) => setVacina(res.data));
   }, [isFocused]);
 
   const navigation = useNavigation();
@@ -24,45 +26,37 @@ export default function MeusPets() {
   return (
     <View style={styles.container}>
       <ScrollView>
-        {pets?.length !== 0 ? (
+        {vacina?.length !== 0 ? (
           <>
-            {pets?.map((item) => (
+            {vacina?.map((item) => (
               <View style={styles.box}>
                 <Image
                   style={styles.img}
-                  source={require("../../../img/dog.jpg")}
+                  source={require("../../../img/ImagemVacina.PNG")}
                 />
-
-                <View style={{ width: 160 }}>
-                  <Text style={styles.nome}>{item.nome}</Text>
-                  <Text style={styles.raça}>Raça: {item.raca}</Text>
+                <View>
+                  <Text style={styles.nome}>Nome: {item.nome}</Text>
+                  <Text style={styles.vacina}>Vacina: {item.vacina}</Text>
+                  <Text style={styles.vacina}>Dose: {item.dose}</Text>
                 </View>
 
                 <View style={styles.icon}>
                   <Feather name="eye" size={25} />
-                </View>
 
-                <View style={styles.icon}>
                   <TouchableOpacity
-                    onPress={() =>
-                      navigation.navigate("ListaVacinas", {
-                        petId: item.id,
-                      })
-                    }
-                  >
-                    <FontAwesome5 name="syringe" size={25} />
-                  </TouchableOpacity>
+                    onPress={() => navigation.navigate()}
+                  ></TouchableOpacity>
                 </View>
               </View>
             ))}
           </>
         ) : (
-          <Text>Você não tem nenhum pet</Text>
+          <Text>Você não tem nenhuma vacina</Text>
         )}
       </ScrollView>
 
-      <TouchableOpacity onPress={() => navigation.navigate("CadastrarPet")}>
-        <View style={styles.addPet}>
+      <TouchableOpacity onPress={() => navigation.navigate("CadastrarVacina")}>
+        <View style={styles.addVacina}>
           <Text style={styles.addText}> + </Text>
         </View>
       </TouchableOpacity>
@@ -104,7 +98,7 @@ const styles = StyleSheet.create({
     marginTop: 40,
     marginRight: 45,
   },
-  addPet: {
+  addVacina: {
     width: 60,
     height: 60,
     backgroundColor: "#fff",
