@@ -11,7 +11,7 @@ const CadastrarVacina = () => {
   const [nome, setNome] = useState("");
   const [vacina, setVacina] = useState("");
   const [idade, setIdade] = useState("");
-  const [dataRegistro, setDataRegistro] = useState(new Date());
+  const [dataAplicacao, setDataAplicacao] = useState(new Date());
   const [dose, setDose] = useState("");
   const [petId, setPetId] = useState("");
 
@@ -29,7 +29,7 @@ const CadastrarVacina = () => {
     nome,
     vacina,
     idade,
-    dataRegistro,
+    dataAplicacao,
     dose,
     petId
   };
@@ -57,8 +57,8 @@ const CadastrarVacina = () => {
               onPress={() => setPetExpanded(!petExpanded)}
               left={(props) => <List.Icon {...props} icon="paw" />}
             >
-              {pets?.map((item) => (
-                <List.Item title={item.nome} onPress={() => {
+              {pets?.map((item, key) => (
+                <List.Item title={item.nome} key={key} onPress={() => {
                   setPetId(item.id)
                   setNome(item.nome)
               }} />
@@ -91,7 +91,7 @@ const CadastrarVacina = () => {
           {showDataRegistroPicker && (
             <DateTimePicker
               testID="dateTimeRegistroPicker"
-              value={dataRegistro}
+              value={dataAplicacao}
               mode={"date"}
               is24Hour={true}
               display="default"
@@ -106,9 +106,9 @@ const CadastrarVacina = () => {
           <TouchableOpacity onPress={() => setShowDataRegistroPicker(true)}>
             <TextInput
               label="Data de Aplicação"
-              value={moment(dataRegistro).format("DD/MM/YYYY")}
+              value={moment(dataAplicacao).format("DD/MM/YYYY")}
               left={<TextInput.Icon name="calendar" />}
-              onChangeText={(text) => setDataRegistro(text)}
+              onChangeText={(text) => setDataAplicacao(text)}
               editable={false}
             />
           </TouchableOpacity>

@@ -1,8 +1,66 @@
 {
   "pets": [
-    
+    {
+      "nome": "Toto",
+      "tipo": "Cachorro",
+      "sexo": "Macho",
+      "raca": "poodle",
+      "peso": "5",
+      "idade": "2",
+      "dataNascimento": "2022-06-16T21:09:36.465Z",
+      "dataRegistro": "2022-06-16T21:09:36.465Z",
+      "id": 2
+    },
+    {
+      "nome": "Bolinha",
+      "tipo": "Gato",
+      "sexo": "Femea",
+      "raca": "viara lata",
+      "peso": "2",
+      "idade": "2",
+      "dataNascimento": "2022-06-18T15:12:02.482Z",
+      "dataRegistro": "2022-06-18T15:12:02.482Z",
+      "id": 3
+    },
+    {
+      "nome": "Rex",
+      "tipo": "Cachorro",
+      "sexo": "Macho",
+      "raca": "poodle",
+      "peso": "5",
+      "idade": "2",
+      "dataNascimento": "2022-06-18T18:16:08.391Z",
+      "dataRegistro": "2022-06-18T18:16:08.391Z",
+      "id": 4
+    }
   ],
   "vacinas": [
-    
+    {
+      "nome": "Toto",
+      "vacina": "Gripe Canina",
+      "idade": "2",
+      "dataAplicacao": "2022-06-16T21:09:39.205Z",
+      "dose": "1",
+      "petId": 2,
+      "id": 2
+    },
+    {
+      "nome": "Bolinha",
+      "vacina": "Anti-rábica",
+      "idade": "8",
+      "dataAplicacao": "2022-06-18T17:20:35.028Z",
+      "dose": "segunda",
+      "petId": 3,
+      "id": 3
+    },
+    {
+      "nome": "Toto",
+      "vacina": "Gripe Canina",
+      "idade": "gdfg",
+      "dataAplicacao": "2022-06-18T18:23:28.107Z",
+      "dose": "dfg",
+      "petId": 2,
+      "id": 4
+    }
   ]
 }

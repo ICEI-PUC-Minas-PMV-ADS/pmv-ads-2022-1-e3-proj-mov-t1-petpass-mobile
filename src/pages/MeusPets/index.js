@@ -21,11 +21,7 @@ export default function MeusPets() {
   }, [isFocused]);
 
   const navigation = useNavigation();
-  console.log(
-    "teste",
-    pets?.map((item) => item)
-  );
-  
+
   const { setseila } = useContext(PetContext);
 
   const HandleClickNavigation = (item) => {
@@ -39,12 +35,7 @@ export default function MeusPets() {
         {pets?.length !== 0 ? (
           <>
             {pets?.map((item, key) => (
-              <TouchableOpacity
-                key={key}
-                style={styles.box}
-                onPress={() => HandleClickNavigation(item.id)}
-              >
-              <View style={styles.box}>
+              <View style={styles.box} key={key}>
                 <Image
                   style={styles.img}
                   source={require("../../../img/dog.jpg")}
@@ -53,10 +44,20 @@ export default function MeusPets() {
                 <View style={{ width: 160 }}>
                   <Text style={styles.nome}>{item.nome}</Text>
                   <Text style={styles.raça}>Raça: {item.raca}</Text>
+                  <Text style={styles.raça}>Tipo: {item.tipo}</Text>
                 </View>
 
                 <View style={styles.icon}>
-                  <Feather name="eye" size={25} />
+                  <TouchableOpacity
+                    key={key}
+                    onPress={() =>
+                      navigation.navigate("InfoPet", {
+                        petId: item.id,
+                      })
+                    }
+                  >
+                    <Feather name="eye" size={25} />
+                  </TouchableOpacity>
                 </View>
 
                 <View style={styles.icon}>
@@ -70,7 +71,7 @@ export default function MeusPets() {
                     <FontAwesome5 name="syringe" size={25} />
                   </TouchableOpacity>
                 </View>
-              </TouchableOpacity>
+              </View>
             ))}
           </>
         ) : (
@@ -107,21 +108,19 @@ const styles = StyleSheet.create({
   nome: {
     paddingTop: 20,
     paddingLeft: 15,
+    paddingBottom: 5,
     fontWeight: "bold",
     fontSize: 17,
     color: "#363F5F",
     flexDirection: "column",
   },
   raça: {
-    padding: 15,
     fontWeight: "bold",
     color: "#969CB3",
   },
   icon: {
     marginTop: 40,
     marginRight: 45,
-    paddingLeft: 70,
-    paddingTop: 35,
   },
   addPet: {
     width: 60,

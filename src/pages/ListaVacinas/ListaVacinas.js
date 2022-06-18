@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import { Feather, FontAwesome5 } from "@expo/vector-icons";
 import api from "../../api/api";
 import { useNavigation, useIsFocused } from "@react-navigation/native";
 
@@ -20,6 +19,7 @@ export default function ListaVacinas({ route }) {
   useEffect(() => {
     api.get(`/pets/${petId}/vacinas`).then((res) => setVacina(res.data));
   }, [isFocused]);
+  
 
   const navigation = useNavigation();
 
@@ -28,24 +28,17 @@ export default function ListaVacinas({ route }) {
       <ScrollView>
         {vacina?.length !== 0 ? (
           <>
-            {vacina?.map((item) => (
-              <View style={styles.box}>
+            {vacina?.map((item, key) => (
+              <View style={styles.box} key={key}>
                 <Image
                   style={styles.img}
                   source={require("../../../img/ImagemVacina.PNG")}
                 />
                 <View>
                   <Text style={styles.nome}>Nome: {item.nome}</Text>
-                  <Text style={styles.vacina}>Vacina: {item.vacina}</Text>
-                  <Text style={styles.vacina}>Dose: {item.dose}</Text>
-                </View>
-
-                <View style={styles.icon}>
-                  <Feather name="eye" size={25} />
-
-                  <TouchableOpacity
-                    onPress={() => navigation.navigate()}
-                  ></TouchableOpacity>
+                  <Text style={styles.dados}>Vacina: {item.vacina}</Text>
+                  <Text style={styles.dados}>Dose: {item.dose}</Text>
+                  <Text style={styles.dados}>Data Aplicação: {item.dataAplicacao}</Text>
                 </View>
               </View>
             ))}
@@ -82,36 +75,15 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   nome: {
-    paddingTop: 20,
-    paddingLeft: 15,
+    paddingTop: 10,
     fontWeight: "bold",
     fontSize: 17,
     color: "#363F5F",
-    flexDirection: "column",
+    flexDirection: "colum",
   },
-  raça: {
-    padding: 15,
+  dados: {
     fontWeight: "bold",
     color: "#969CB3",
-  },
-  icon: {
-    marginTop: 40,
-    marginRight: 45,
-  },
-  addVacina: {
-    width: 60,
-    height: 60,
-    backgroundColor: "#fff",
-    borderRadius: 60,
-    justifyContent: "center",
-    alignItems: "center",
-    borderColor: "#c0c0c0",
-    borderWidth: 1,
-    bottom: 10,
-    marginHorizontal: 310,
-  },
-  addText: {
-    fontWeight: "bold",
-    fontSize: 25,
+    fontSize: 15,
   },
 });

@@ -102,6 +102,7 @@ export default function Routes() {
               name="ListaVacinas"
               component={ListaVacinas}
               options={{
+                tabBarButton:() => null,
                 tabBarIcon: ({ size, color }) => (
                   <Feather name="list" size={size} color={color} />
                 ),
