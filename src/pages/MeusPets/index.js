@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -10,6 +10,7 @@ import {
 import { Feather, FontAwesome5 } from "@expo/vector-icons";
 import api from "../../api/api";
 import { useNavigation, useIsFocused } from "@react-navigation/native";
+import PetContext from "../../Hooks/pets";
 
 export default function MeusPets() {
   const [pets, setPets] = useState();
@@ -20,13 +21,29 @@ export default function MeusPets() {
   }, [isFocused]);
 
   const navigation = useNavigation();
+  console.log(
+    "teste",
+    pets?.map((item) => item)
+  );
+  
+  const { setseila } = useContext(PetContext);
+
+  const HandleClickNavigation = (item) => {
+    setseila(item);
+    navigation.navigate("InfoPet");
+  };
 
   return (
     <View style={styles.container}>
       <ScrollView>
         {pets?.length !== 0 ? (
           <>
-            {pets?.map((item) => (
+            {pets?.map((item, key) => (
+              <TouchableOpacity
+                key={key}
+                style={styles.box}
+                onPress={() => HandleClickNavigation(item.id)}
+              >
               <View style={styles.box}>
                 <Image
                   style={styles.img}
@@ -53,7 +70,7 @@ export default function MeusPets() {
                     <FontAwesome5 name="syringe" size={25} />
                   </TouchableOpacity>
                 </View>
-              </View>
+              </TouchableOpacity>
             ))}
           </>
         ) : (
@@ -103,6 +120,8 @@ const styles = StyleSheet.create({
   icon: {
     marginTop: 40,
     marginRight: 45,
+    paddingLeft: 70,
+    paddingTop: 35,
   },
   addPet: {
     width: 60,

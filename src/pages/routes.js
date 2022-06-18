@@ -1,9 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MeusPets from "./MeusPets/index";
 import Profile from "./Profile/index";
 import { Entypo, Feather, FontAwesome5 } from "@expo/vector-icons";
+import MeusPetsInfo from "./MeusPetsInfo/index";
 import Presentation from "./presentation/Presentation";
 import { CreateAccount } from "./CreateAccount/CreateAccount";
 import CadastrarPet from "./CadastrarPet/CadastrarPet";
@@ -107,6 +108,18 @@ export default function Routes() {
                 title: "Listar Vacinas",
               }}
             />
+
+            <Tab.Screen
+              name="InfoPet"
+              component={MeusPetsInfo}
+              options={{
+                tabBarButton:() => null,
+                tabBarIcon: ({ size, color }) => (
+                  <Feather name="user" size={size} color={color} />
+                ),
+              }}
+            />
+
           </Tab.Navigator>
         </>
       )}
