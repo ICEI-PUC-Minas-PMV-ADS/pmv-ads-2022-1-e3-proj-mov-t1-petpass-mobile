@@ -23,7 +23,7 @@ const CadastrarVacina = () => {
 
   const navigation = useNavigation();
 
-  const [showDataRegistroPicker, setShowDataRegistroPicker] = useState(false);
+  const [showDataAplicacaoPicker, setShowDataAplicacaoPicker] = useState(false);
 
   const dataCreateVacina = {
     nome,
@@ -88,22 +88,22 @@ const CadastrarVacina = () => {
             onChangeText={(text) => setIdade(text)}
           />
 
-          {showDataRegistroPicker && (
+          {showDataAplicacaoPicker && (
             <DateTimePicker
               testID="dateTimeRegistroPicker"
               value={dataAplicacao}
               mode={"date"}
               is24Hour={true}
               display="default"
-              onTouchCancel={() => setShowDataRegistroPicker(false)}
+              onTouchCancel={() => setShowDataAplicacaoPicker(false)}
               onChange={(event, date) => {
-                setShowDataRegistroPicker(false);
-                setDataRegistro(date);
+                setShowDataAplicacaoPicker(false);
+                setDataAplicacao(date);
               }}
             />
           )}
 
-          <TouchableOpacity onPress={() => setShowDataRegistroPicker(true)}>
+          <TouchableOpacity onPress={() => setShowDataAplicacaoPicker(true)}>
             <TextInput
               label="Data de Aplicação"
               value={moment(dataAplicacao).format("DD/MM/YYYY")}

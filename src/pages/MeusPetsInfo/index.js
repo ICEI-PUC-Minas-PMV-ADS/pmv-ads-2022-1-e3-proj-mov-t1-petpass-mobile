@@ -13,7 +13,6 @@ export default function MeusPetsInfo({ route }) {
     api.get(`/pets/${petId}?_embed=vacinas`).then((res) => setPet(res.data));
   }, [isFocused]);
 
-
   const dateNascimento = new Date(pet.dataNascimento);
   const formatDataNascimento = dateNascimento.toLocaleDateString("pt-BR", {
     timeZone: "UTC",
@@ -29,7 +28,7 @@ export default function MeusPetsInfo({ route }) {
       <ScrollView>
         <View style={styles.box}>
           <View>
-          <Image
+            <Image
               style={styles.img}
               source={require("../../../img/dog.jpg")}
             />
@@ -49,26 +48,28 @@ export default function MeusPetsInfo({ route }) {
           </View>
 
           <View style={styles.vac}>
-          {pet.vacinas?.length !== 0 ? (
-          <>
-            {pet.vacinas?.map((item, key) => (
-              <View style={styles.box} key={key}>
-                <Image
-                  style={styles.img}
-                  source={require("../../../img/ImagemVacina.PNG")}
-                />
-                <View>
-                  <Text style={styles.dados}>Vacina: {item.vacina}</Text>
-                  <Text style={styles.dados}>Dose: {item.dose}</Text>
-                  <Text style={styles.dados}>Data Aplicação: {item.dataAplicacao}</Text>
-                </View>
-              </View>
-            ))}
-          </>
-        ) : (
-          <Text>Você não tem nenhuma vacina</Text>
-        )}
-         </View>
+            {pet.vacinas?.length !== 0 ? (
+              <>
+                {pet.vacinas?.map((item, key) => (
+                  <View style={styles.box} key={key}>
+                    <Image
+                      style={styles.img}
+                      source={require("../../assets/vacina.png")}
+                    />
+                    <View>
+                      <Text style={styles.dados}>Vacina: {item.vacina}</Text>
+                      <Text style={styles.dados}>Dose: {item.dose}</Text>
+                      <Text style={styles.dados}>
+                        Data Aplicação: {item.dataAplicacao}
+                      </Text>
+                    </View>
+                  </View>
+                ))}
+              </>
+            ) : (
+              <Text>Você não tem nenhuma vacina</Text>
+            )}
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -83,9 +84,9 @@ const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 20,
     backgroundColor: "#fff",
-    flexDirection: "colum",
+    flexDirection: "column",
   },
-  vac:{
+  vac: {
     margin: 10,
     borderRadius: 20,
     backgroundColor: "#fff",

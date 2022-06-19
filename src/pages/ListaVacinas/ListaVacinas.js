@@ -19,7 +19,6 @@ export default function ListaVacinas({ route }) {
   useEffect(() => {
     api.get(`/pets/${petId}/vacinas`).then((res) => setVacina(res.data));
   }, [isFocused]);
-  
 
   const navigation = useNavigation();
 
@@ -32,13 +31,15 @@ export default function ListaVacinas({ route }) {
               <View style={styles.box} key={key}>
                 <Image
                   style={styles.img}
-                  source={require("../../../img/ImagemVacina.PNG")}
+                  source={require("../../assets/vacina.png")}
                 />
                 <View>
                   <Text style={styles.nome}>Nome: {item.nome}</Text>
                   <Text style={styles.dados}>Vacina: {item.vacina}</Text>
                   <Text style={styles.dados}>Dose: {item.dose}</Text>
-                  <Text style={styles.dados}>Data Aplicação: {item.dataAplicacao}</Text>
+                  <Text style={styles.dados}>
+                    Data Aplicação: {item.dataAplicacao}
+                  </Text>
                 </View>
               </View>
             ))}
@@ -79,11 +80,22 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 17,
     color: "#363F5F",
-    flexDirection: "colum",
   },
   dados: {
     fontWeight: "bold",
     color: "#969CB3",
     fontSize: 15,
+  },
+  addVacina: {
+    width: 60,
+    height: 60,
+    backgroundColor: "#fff",
+    borderRadius: 60,
+    justifyContent: "center",
+    alignItems: "center",
+    borderColor: "#c0c0c0",
+    borderWidth: 1,
+    bottom: 10,
+    marginHorizontal: 310,
   },
 });
