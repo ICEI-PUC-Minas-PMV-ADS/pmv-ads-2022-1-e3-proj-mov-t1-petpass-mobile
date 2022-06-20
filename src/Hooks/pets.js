@@ -3,10 +3,10 @@ import React, { createContext, useState } from "react";
 const PetContext = createContext(undefined, undefined);
 
 const PetProvider = ({ children }) => {
-  const [seila, setseila] = useState(1);
+  const [informacaoPet, setInformacaoPet] = useState(1);
 
   return (
-    <PetContext.Provider value={{ seila, setseila }}>
+    <PetContext.Provider value={{ informacaoPet, setInformacaoPet }}>
       {children}
     </PetContext.Provider>
   );

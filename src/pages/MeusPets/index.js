@@ -6,24 +6,27 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  RefreshControl
 } from "react-native";
 import api from "../../api/api";
 import { useNavigation } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
+import { Button } from 'react-native-paper';
+
 
 export default function MeusPets() {
   const [pets, setPets] = useState();
 
   useEffect(() => {
     api.get("/pets").then((res) => setPets(res.data));
-  }, []);
+  }, [pets]);
 
   const navigation = useNavigation();
 
-  const { setseila } = useContext(PetContext);
+  const { setInformacaoPet } = useContext(PetContext);
 
   const HandleClickNavigation = (item) => {
-    setseila(item);
+    setInformacaoPet(item);
     navigation.navigate("InfoPet");
   };
 
@@ -36,7 +39,7 @@ export default function MeusPets() {
               <TouchableOpacity key={key} style={styles.box} onPress={() => HandleClickNavigation(item.id)}>
                 <Image
                   style={styles.img}
-                  source={require("../../../img/dog.jpg")}
+                  source={require("../../assets/Golden.jpg")}
                 />
                 <View>
                   <Text style={styles.nome}>{item.name}</Text>
@@ -46,15 +49,39 @@ export default function MeusPets() {
             ))}
           </>
         ) : (
-          <Text>Você não tem nenhum pet</Text>
+          <>
+            <View style={styles.notPet}>
+              <Image style={styles.imgOps} source={require("../../assets/Ops-dog.png")}/>
+              <Text style={styles.textOps}>Opss!</Text>
+              <Text style={styles.textNotPet}>Você não possui pet cadastrado</Text>
+            </View>
+
+            <View style={{ justifyContent: "center", paddingHorizontal: 40 }}>
+              <Button
+                mode="contained"
+                theme={{ roundness: 20 }}
+                style={{
+                  marginTop: 20,
+                }}
+                onPress={() => navigation.navigate("CadastrarPet")}
+                color="#19225B"
+              >
+                Cadastrar Pet
+              </Button>
+            </View>
+            
+          </>
         )}
       </ScrollView>
 
-      <TouchableOpacity onPress={() => navigation.navigate("CadastrarPet")}>
+      {pets?.length !== 0 ? (
+        <TouchableOpacity onPress={() => navigation.navigate("CadastrarPet")}>
         <View style={styles.addPet}>
           <Text style={styles.addText}> + </Text>
         </View>
       </TouchableOpacity>
+      ): null }
+
     </View>
   );
 }
@@ -76,6 +103,26 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     margin: 10,
   },
+  notPet:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop:100,
+  },
+  imgOps:{
+    width:170,
+    height:200,
+  },
+  textOps: {
+    fontSize:50,
+    fontWeight: 'bold',
+    fontFamily: "Roboto",
+  },
+  textNotPet:{
+    fontSize: 25,
+    fontWeight:"bold",
+    fontFamily: "Roboto",
+  },
   nome: {
     paddingTop: 20,
     paddingLeft: 15,
@@ -89,10 +136,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#969CB3",
   },
-  icon: {
-    paddingLeft: 70,
-    paddingTop: 35,
-  },
   addPet: {
     width: 60,
     height: 60,
@@ -103,7 +146,7 @@ const styles = StyleSheet.create({
     borderColor: "#c0c0c0",
     borderWidth: 1,
     bottom: 10,
-    marginHorizontal: 310,
+    marginHorizontal: 290,
   },
   addText: {
     fontWeight: "bold",

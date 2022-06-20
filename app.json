@@ -1,10 +1,14 @@
 {
   "expo": {
-    "name": "Projeto",
+    "name": "PetPass",
     "slug": "Projeto",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.yourcompany.yourappname",
+         "versionCode": 1
+      }
   }
 }

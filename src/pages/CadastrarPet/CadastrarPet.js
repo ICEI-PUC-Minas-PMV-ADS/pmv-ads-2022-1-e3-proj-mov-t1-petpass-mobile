@@ -16,16 +16,17 @@ const CadastrarPet = () => {
   const [peso, setPeso] = useState('');
   const [idade, setIdade] = useState('');
 
-  const [showDataNascimentoPicker, setShowDataNascimentoPicker] = useState(false);
-  const [showDataRegistroPicker, setShowDataRegistroPicker] = useState(false);
-
+  
   const [dataNascimento, setDataNascimento] = useState(new Date());
   const [dataRegistro, setDataRegistro] = useState(new Date());
-
+  
   const [tipoExpanded, setTipoExpanded] = useState(false); 
   const [sexoExpanded, setSexoExpanded] = useState(false);
-
+  
   const navigation = useNavigation();
+  
+  const [showDataNascimentoPicker, setShowDataNascimentoPicker] = useState(false);
+  const [showDataRegistroPicker, setShowDataRegistroPicker] = useState(false);
 
   const dataCreatePet = { name,tipo,sexo,raca,peso,idade,dataNascimento,dataRegistro } 
   const handleCreatePet = () => {

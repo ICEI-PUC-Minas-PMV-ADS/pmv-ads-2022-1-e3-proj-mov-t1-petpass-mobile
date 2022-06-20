@@ -4,11 +4,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MeusPets from "./MeusPets/index";
 import Profile from "./Profile/index";
 import MeusPetsInfo from "./MeusPetsInfo/index";
-import { Entypo, Feather } from "@expo/vector-icons";
+import { Entypo, Feather, FontAwesome5  } from "@expo/vector-icons";
 import Presentation from "./presentation/Presentation";
 import { CreateAccount } from "./CreateAccount/CreateAccount";
 import CadastrarPet from "./CadastrarPet/CadastrarPet";
 import { Login } from "./Login/Login";
+import CadastrarVacina from "./CadastrarVacina/CadastrarVacina";
 
 import GlobalContext from "../Hooks/login";
 
@@ -39,6 +40,8 @@ export default function Routes() {
             options={{ header: () => null }}
           />
           <Stack.Screen name="CadastrarPet" component={CadastrarPet} />
+
+          <Stack.Screen name="CadastrarVacina" component={CadastrarVacina} />
         </Stack.Navigator>
       ) : (
         <>
@@ -66,12 +69,23 @@ export default function Routes() {
               name="CadastrarPet"
               component={CadastrarPet}
               options={{
+                tabBarButton:() => null,
                 tabBarIcon: ({ size, color }) => (
                   <Feather name="book" size={size} color={color} />
                 ),
               }}
             />
 
+            <Tab.Screen
+              name="CadastrarVacina"
+              component={CadastrarVacina}
+              options={{
+                tabBarIcon: ({ size, color }) => (
+                  <FontAwesome5 name="syringe" size={size} color={color} />
+                ),
+              }}
+            />
+            
             <Tab.Screen
               name="Perfil"
               component={Profile}
@@ -81,6 +95,7 @@ export default function Routes() {
                 ),
               }}
             />
+
 
             <Tab.Screen
               name="InfoPet"
@@ -92,6 +107,7 @@ export default function Routes() {
                 ),
               }}
             />
+
 
           </Tab.Navigator>
         </>
