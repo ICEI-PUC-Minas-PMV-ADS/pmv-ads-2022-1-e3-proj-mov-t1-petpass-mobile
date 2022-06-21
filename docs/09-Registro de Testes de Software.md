@@ -16,6 +16,8 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 RF-001: O sistema deverá permitir a criação de um perfil de usuário para o responsável do pet (associado ao seu e-mail).
 
+--
+
 ### Caso teste CT-002
 
 **Objetivo do teste:**
