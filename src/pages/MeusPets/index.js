@@ -13,6 +13,9 @@ import { useNavigation } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
 import { Button } from 'react-native-paper';
 
+import ImagemCachorro from "../../assets/Golden.jpg";
+import ImagemGato from "../../assets/gato.jpg";
+
 
 export default function MeusPets() {
   const [pets, setPets] = useState();
@@ -39,7 +42,7 @@ export default function MeusPets() {
               <TouchableOpacity key={key} style={styles.box} onPress={() => HandleClickNavigation(item.id)}>
                 <Image
                   style={styles.img}
-                  source={require("../../assets/Golden.jpg")}
+                  source={item.tipo == "Cachorro"?ImagemCachorro: ImagemGato}
                 />
                 <View>
                   <Text style={styles.nome}>{item.name}</Text>

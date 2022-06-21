@@ -1,32 +1,28 @@
 import { useContext, useEffect, useState } from "react";
 import { Image, ScrollView, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import api from "../../api/api";
+import { useIsFocused } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
 
 export default function MeusPetsInfo(){
     const { informacaoPet } = useContext(PetContext);
 
+    const isFocused = useIsFocused();
+
     const [pet, setPet] = useState({});
     const [vacina, setVacina] = useState({});
     
     useEffect(() => {
-      api.get(`/pets/${informacaoPet}`).then((res) => setPet(res.data));
-      api.get(`/vacinas/${informacaoPet}`).then((res) => setVacina(res.data));
-    }, [informacaoPet]);
+      api.get(`/pets/${informacaoPet}/?_embed=vacinas`).then((res) => setPet(res.data));
+    }, [isFocused]);
     
-        const dateNascimento = new Date(pet.dataNascimento);
-        const formatDataNascimento = dateNascimento.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
-
-        const dateRegistro = new Date(pet.dataRegistro);
-        const formatDataRegistro = dateRegistro.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
-
-        const dateAplicacao = new Date(vacina.dataAplicacao);
-        const formatDataAplicacao = dateAplicacao.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
-
-
+    const formatarData = (data) => {
+      return new Date(data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+    };
 
    return (
        <>
+       <ScrollView>
         <TouchableOpacity style={styles.card}>
             <Image style={styles.img} source={require("../../assets/Golden.jpg")}/>
 
@@ -38,34 +34,36 @@ export default function MeusPetsInfo(){
                         <Text style={styles.restInfo}>Tipo: {pet.tipo}</Text>
                         <Text style={styles.restInfo}>Peso: {pet.peso}Kg</Text>
                         <Text style={styles.restInfo}>Idade: {pet.tipo}</Text>
-                        <Text style={styles.restInfo}>Data Nasc: {formatDataNascimento}</Text>
-                        <Text style={styles.restInfo}>Data de Cadastro: {formatDataRegistro}</Text>
+                        <Text style={styles.restInfo}>Data Nasc: {formatarData(pet.dataNascimento)}</Text>
+                        <Text style={styles.restInfo}>Data de Cadastro: {formatarData(pet.dataRegistro)}</Text>
                 </View>
-
 
         </TouchableOpacity>
             
-                    {vacina !== 0 ? ( 
-                       <View style={styles.cardVac}>
-                            <Image
-                              style={styles.imgVac}
-                              source={require("../../assets/ImagemVacina.png")}
-                            />
-                        <View style={styles.infoVac}>
-                            <View>
-                              <Text style={styles.name}>Vacina: {vacina.vacina}</Text>
-                              <Text style={styles.restInfo}>Dose: {vacina.dose}</Text>
-                              <Text style={styles.restInfo}>
-                                Data Aplicação: {formatDataAplicacao}
-                              </Text>
-                            </View>
-                        </View>
-                     </View>
-                    ) : (
-                        <Text>Não tem vacinas cadastradas</Text>
-                    )
-                  }
-           
+        <View style={styles.vac}>
+            {pet.vacinas?.length !== 0 ? (
+              <>
+                {pet.vacinas?.map((item, key) => (
+                  <View style={styles.box} key={key}>
+                    <Image
+                      style={styles.imgVac}
+                      source={require("../../assets/ImagemVacina.png")}
+                    />
+                    <View>
+                      <Text style={styles.dados}>Vacina: {item.vacina}</Text>
+                      <Text style={styles.dados}>Dose: {item.dose}</Text>
+                      <Text style={styles.dados}>
+                        Data Aplicação: {formatarData(item.dataAplicacao)}
+                      </Text>
+                    </View>
+                  </View>
+                ))}
+              </>
+            ) : (
+              <Text>Você não tem nenhuma vacina</Text>
+            )}
+          </View>
+          </ScrollView>  
        </>
    );
 }
@@ -126,7 +124,5 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         margin: 10,
       },
-
-
      
 })

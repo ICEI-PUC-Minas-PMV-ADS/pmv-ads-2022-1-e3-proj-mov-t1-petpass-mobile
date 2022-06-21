@@ -99,7 +99,7 @@ const CadastrarVacina = () => {
               onTouchCancel={() => setShowDataAplicacao(false)}
               onChange={(event, date) => {
                 setShowDataAplicacao(false);
-                setDataRegistro(date);
+                setDataAplicacao(date);
               }}
             />
           )}
