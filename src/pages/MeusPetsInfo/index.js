@@ -3,9 +3,18 @@ import { Image, ScrollView, StyleSheet, Text, View, TouchableOpacity } from "rea
 import api from "../../api/api";
 import { useIsFocused } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
+import { Button } from 'react-native-paper';
+import { useNavigation } from "@react-navigation/native";
+
+
+
+import ImagemCachorro from "../../assets/Golden.jpg";
+import ImagemGato from "../../assets/gato.jpg";
 
 export default function MeusPetsInfo(){
     const { informacaoPet } = useContext(PetContext);
+    const navigation = useNavigation();
+
 
     const isFocused = useIsFocused();
 
@@ -22,9 +31,9 @@ export default function MeusPetsInfo(){
 
    return (
        <>
-       <ScrollView>
+       
         <TouchableOpacity style={styles.card}>
-            <Image style={styles.img} source={require("../../assets/Golden.jpg")}/>
+            <Image style={styles.img} source={pet.tipo == "Cachorro" ? ImagemCachorro: ImagemGato}/>
 
                 <View style={styles.infoContainer}>
                     <View style={styles.petInfo}>
@@ -37,32 +46,47 @@ export default function MeusPetsInfo(){
                         <Text style={styles.restInfo}>Data Nasc: {formatarData(pet.dataNascimento)}</Text>
                         <Text style={styles.restInfo}>Data de Cadastro: {formatarData(pet.dataRegistro)}</Text>
                 </View>
-
+                
         </TouchableOpacity>
-            
-        <View style={styles.vac}>
+        
+        <ScrollView>    
             {pet.vacinas?.length !== 0 ? (
               <>
                 {pet.vacinas?.map((item, key) => (
-                  <View style={styles.box} key={key}>
-                    <Image
-                      style={styles.imgVac}
-                      source={require("../../assets/ImagemVacina.png")}
-                    />
-                    <View>
-                      <Text style={styles.dados}>Vacina: {item.vacina}</Text>
-                      <Text style={styles.dados}>Dose: {item.dose}</Text>
-                      <Text style={styles.dados}>
-                        Data Aplicação: {formatarData(item.dataAplicacao)}
-                      </Text>
+                <View style={styles.cardVac} key={key}>
+                      <Image
+                        style={styles.imgVac}
+                        source={require("../../assets/ImagemVacina.png")}
+                      />
+                    <View style={styles.infoContainer} key={key}>
+                      <View style={styles.vacInfo}>
+                        <Text style={styles.restInfo}>Vacina: {item.vacina}</Text>
+                        <Text style={styles.restInfo}>Dose: {item.dose}</Text>
+                        <Text style={styles.restInfo}>
+                          Data Aplicação: {formatarData(item.dataAplicacao)}
+                        </Text>
+                      </View>
                     </View>
-                  </View>
+                </View>
                 ))}
               </>
             ) : (
-              <Text>Você não tem nenhuma vacina</Text>
+              <>
+                <Text style={styles.textNotVac}>Você não tem nenhuma vacina</Text>
+                <Button
+                  mode="contained"
+                  theme={{ roundness: 20 }}
+                  style={{
+                    marginTop: 20,
+                    paddingHorizontal: 40
+                  }}
+                  onPress={() => navigation.navigate("CadastrarVacina")}
+                  color="#19225B"
+                >
+                  Cadastrar Vacina
+                </Button>
+              </>
             )}
-          </View>
           </ScrollView>  
        </>
    );
@@ -78,11 +102,12 @@ const styles = StyleSheet.create({
         height:250
     },
     cardVac:{
-      marginVertical:20,
+      flexDirection:"row",
+      marginVertical:5,
       marginHorizontal:10,
       backgroundColor: "#fff",
       borderRadius:15, 
-      height:200
+      height:125
     },
     img: {
         width: 100,
@@ -90,14 +115,25 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         margin: 10,
       },
+      imgVac: {
+        width: 100,
+        height: 100,
+        borderRadius: 30,
+        margin: 10,
+      },
       infoContainer:{
-        padding:0.5
+        paddingLeft:5
       },
       petInfo:{
         flexDirection:"column",
         justifyContent:"space-between",
         marginBottom:5,
         paddingVertical:20
+      },
+      vacInfo:{
+        flexDirection:"column",
+        marginBottom:5,
+        marginVertical:20
       },
       name:{
         fontSize:20,
@@ -118,11 +154,11 @@ const styles = StyleSheet.create({
       infoVac: {
         paddingHorizontal:20,
       },
-      imgVac: {
-        width: 100,
-        height: 100,
-        borderRadius: 30,
-        margin: 10,
-      },
+      textNotVac: {
+        fontWeight: "bold",
+        fontSize:20,
+        marginTop:100,
+        marginLeft:40
+      }
      
 })

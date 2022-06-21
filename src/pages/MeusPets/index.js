@@ -6,23 +6,26 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
-  RefreshControl
 } from "react-native";
 import api from "../../api/api";
 import { useNavigation } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
 import { Button } from 'react-native-paper';
+import { useIsFocused } from "@react-navigation/native";
+import { FontAwesome5 } from '@expo/vector-icons';
 
 import ImagemCachorro from "../../assets/Golden.jpg";
 import ImagemGato from "../../assets/gato.jpg";
 
-
 export default function MeusPets() {
-  const [pets, setPets] = useState();
 
+  const [pets, setPets] = useState();
+  const isFocused = useIsFocused();
+
+  
   useEffect(() => {
     api.get("/pets").then((res) => setPets(res.data));
-  }, [pets]);
+  }, [isFocused]);
 
   const navigation = useNavigation();
 
@@ -42,12 +45,16 @@ export default function MeusPets() {
               <TouchableOpacity key={key} style={styles.box} onPress={() => HandleClickNavigation(item.id)}>
                 <Image
                   style={styles.img}
-                  source={item.tipo == "Cachorro"?ImagemCachorro: ImagemGato}
+                  source={item.tipo == "Cachorro" ? ImagemCachorro: ImagemGato}
                 />
                 <View>
                   <Text style={styles.nome}>{item.name}</Text>
                   <Text style={styles.raça}>Raça: {item.raca}</Text>
                 </View>
+
+                <TouchableOpacity style={styles.icon}>
+                  <FontAwesome5 name="trash" size={20}/>
+                </TouchableOpacity>
               </TouchableOpacity>
             ))}
           </>
@@ -93,6 +100,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#DCDCDC",
+  },
+  icon:{
+    position: "absolute",
+    paddingLeft:300,
+    paddingTop:40,
   },
   box: {
     margin: 10,
