@@ -34,11 +34,11 @@ A seguir, é mostrado o Esquema relacional da aplicação Pet Pass:
 
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
+**O arquivo contendo o banco de dados SQL será enviado separadamente e junto com a apresentação do projeto e o vídeo de funcionamento da aplicação.
+
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+A aplicação foi desenvolvida nas linguagens Java Script, CSS e React Native, utilizando com IDE o Expo e o VS Code para uniformização dos códigos. Foi utilizado também o jSON server para criação de APIs.
 
 ## Hospedagem
 
