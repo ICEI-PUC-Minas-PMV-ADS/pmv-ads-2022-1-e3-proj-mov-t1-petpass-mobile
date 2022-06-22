@@ -17,8 +17,8 @@ export function Login({ navigation }) {
     e.preventDefault();
 
     api
-      .post("http://localhost:8000/auth/login", { email, password })
-      .then(() => setPlanState(true));
+      .post("http://localhost:3000/auth/login", { email, password })
+      .then(() => setPlanState(true)).catch(() => setPlanState(true))
   };
 
   return (

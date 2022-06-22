@@ -30,13 +30,10 @@ const CadastrarPet = () => {
 
   const dataCreatePet = { name,tipo,sexo,raca,peso,idade,dataNascimento,dataRegistro } 
   const handleCreatePet = () => {
-    setTimeout(() => {
-      api.post('/pets' , dataCreatePet)
-      .then(() => navigation.navigate('Meus Pets'))
-      .catch((err) => console.error(err));
 
-    }, 1000)
-    
+      api.post('/pets' , dataCreatePet)
+      .then(() =>     setTimeout(() => { navigation.navigate('Meus Pets')   }, 1000))
+      .catch((err) => console.error(err));
   }
 
   return (

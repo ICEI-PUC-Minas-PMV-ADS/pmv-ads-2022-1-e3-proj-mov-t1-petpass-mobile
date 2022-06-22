@@ -10,22 +10,20 @@ import {
 import api from "../../api/api";
 import { useNavigation } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
-import { Button } from 'react-native-paper';
+import { Button } from "react-native-paper";
 import { useIsFocused } from "@react-navigation/native";
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5 } from "@expo/vector-icons";
 
 import ImagemCachorro from "../../assets/Golden.jpg";
 import ImagemGato from "../../assets/gato.jpg";
 
 export default function MeusPets() {
-
   const [pets, setPets] = useState();
   const isFocused = useIsFocused();
 
-  
   useEffect(() => {
     api.get("/pets").then((res) => setPets(res.data));
-  }, [isFocused]);
+  }, []);
 
   const navigation = useNavigation();
 
@@ -36,24 +34,35 @@ export default function MeusPets() {
     navigation.navigate("InfoPet");
   };
 
+  const HandleDeletePet = (id) => {
+    api.delete(`/pets/${id}`);
+  };
+
   return (
     <View style={styles.container}>
       <ScrollView>
         {pets?.length !== 0 ? (
           <>
             {pets?.map((item, key) => (
-              <TouchableOpacity key={key} style={styles.box} onPress={() => HandleClickNavigation(item.id)}>
+              <TouchableOpacity
+                key={key}
+                style={styles.box}
+                onPress={() => HandleClickNavigation(item.id)}
+              >
                 <Image
                   style={styles.img}
-                  source={item.tipo == "Cachorro" ? ImagemCachorro: ImagemGato}
+                  source={item.tipo == "Cachorro" ? ImagemCachorro : ImagemGato}
                 />
                 <View>
                   <Text style={styles.nome}>{item.name}</Text>
                   <Text style={styles.raça}>Raça: {item.raca}</Text>
                 </View>
 
-                <TouchableOpacity style={styles.icon}>
-                  <FontAwesome5 name="trash" size={20}/>
+                <TouchableOpacity
+                  style={styles.icon}
+                  onPress={() => HandleDeletePet(item.id)}
+                >
+                  <FontAwesome5 name="trash" size={20} />
                 </TouchableOpacity>
               </TouchableOpacity>
             ))}
@@ -61,9 +70,14 @@ export default function MeusPets() {
         ) : (
           <>
             <View style={styles.notPet}>
-              <Image style={styles.imgOps} source={require("../../assets/Ops-dog.png")}/>
+              <Image
+                style={styles.imgOps}
+                source={require("../../assets/Ops-dog.png")}
+              />
               <Text style={styles.textOps}>Opss!</Text>
-              <Text style={styles.textNotPet}>Você não possui pet cadastrado</Text>
+              <Text style={styles.textNotPet}>
+                Você não possui pet cadastrado
+              </Text>
             </View>
 
             <View style={{ justifyContent: "center", paddingHorizontal: 40 }}>
@@ -79,19 +93,17 @@ export default function MeusPets() {
                 Cadastrar Pet
               </Button>
             </View>
-            
           </>
         )}
       </ScrollView>
 
       {pets?.length !== 0 ? (
         <TouchableOpacity onPress={() => navigation.navigate("CadastrarPet")}>
-        <View style={styles.addPet}>
-          <Text style={styles.addText}> + </Text>
-        </View>
-      </TouchableOpacity>
-      ): null }
-
+          <View style={styles.addPet}>
+            <Text style={styles.addText}> + </Text>
+          </View>
+        </TouchableOpacity>
+      ) : null}
     </View>
   );
 }
@@ -101,10 +113,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#DCDCDC",
   },
-  icon:{
+  icon: {
     position: "absolute",
-    paddingLeft:300,
-    paddingTop:40,
+    paddingLeft: 300,
+    paddingTop: 40,
   },
   box: {
     margin: 10,
@@ -118,24 +130,24 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     margin: 10,
   },
-  notPet:{
+  notPet: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop:100,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 100,
   },
-  imgOps:{
-    width:170,
-    height:200,
+  imgOps: {
+    width: 170,
+    height: 200,
   },
   textOps: {
-    fontSize:50,
-    fontWeight: 'bold',
+    fontSize: 50,
+    fontWeight: "bold",
     fontFamily: "Roboto",
   },
-  textNotPet:{
+  textNotPet: {
     fontSize: 25,
-    fontWeight:"bold",
+    fontWeight: "bold",
     fontFamily: "Roboto",
   },
   nome: {
