@@ -16,7 +16,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 RF-001: O sistema deverá permitir a criação de um perfil de usuário para o responsável do pet (associado ao seu e-mail).
 
---
+---
 
 ### Caso teste CT-002
 
@@ -28,6 +28,8 @@ RF-001: O sistema deverá permitir a criação de um perfil de usuário para o r
 
 RF-001: O sistema deverá permitir a criação de um perfil de usuário para o responsável do pet (associado ao seu e-mail).
 
+---
+
 ### Caso teste CT-003
 
 **Objetivo do teste:**
@@ -37,6 +39,10 @@ RF-001: O sistema deverá permitir a criação de um perfil de usuário para o r
 **Requisitos associados:**
 
 RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e permitindo a verificação de seus dados básicos (nome, raça, espécie, peso, idade) e de vacinação (tipo de vacina e data de vacinação).
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/066ff9b0d4185c483f9af6c2a156c12f65b97b25/docs/img/cadastrar%20pet.jpeg
+
+---
 
 ### Caso teste CT-004
 
@@ -48,6 +54,10 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e permitindo a verificação de seus dados básicos (nome, raça, espécie, peso, idade) e de vacinação (tipo de vacina e data de vacinação).
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/316ce54ae93daf1c8cdcfe47df4973f105bb3d8a/docs/img/visualiza%20perfis.jpeg
+
+---
+
 ### Caso teste CT-005
 
 **Objetivo do teste:**
@@ -57,6 +67,12 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 **Requisitos associados:**
 
 RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e permitindo a verificação de seus dados básicos (nome, raça, espécie, peso, idade) e de vacinação (tipo de vacina e data de vacinação).
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/0f068b423c00394cd4c9b5065a4b6e9064bfeaed/docs/img/detalhes%20pet.jpeg
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/0f068b423c00394cd4c9b5065a4b6e9064bfeaed/docs/img/detalhes%20pet2.jpeg
+
+---
 
 ### Caso teste CT-006
 
@@ -68,6 +84,8 @@ RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e per
 
 RF-003: O sistema deverá permitir gerar um relatório com as informações de saúde dos animais (dados, vacinas já aplicadas, datas de aplicação, etc.).
 
+---
+
 ### Caso teste CT-007
 
 **Objetivo do teste:**
@@ -77,6 +95,8 @@ RF-003: O sistema deverá permitir gerar um relatório com as informações de s
 **Requisitos associados:**
 
 RF-004: O sistema deverá permitir a exclusão do perfil do pet, sem excluir a conta do responsável.
+
+---
 
 ### Caso teste CT-008
 
@@ -88,6 +108,8 @@ RF-004: O sistema deverá permitir a exclusão do perfil do pet, sem excluir a c
 
 RF-005: O sistema deverá permitir a exclusão da conta de usuário responsável do pet, excluindo automaticamente qualquer perfil de pet vinculado somente a ela no momento.
 
+---
+
 ### Caso teste CT-009
 
 **Objetivo do teste:**
@@ -97,6 +119,8 @@ RF-005: O sistema deverá permitir a exclusão da conta de usuário responsável
 **Requisitos associados:**
 
 RNF-001: O aplicativo deverá funcionar nos principais sistemas operacionais mobile (Android e IOS).
+
+---
 
 ### Caso teste CT-010
 
@@ -108,6 +132,8 @@ RNF-001: O aplicativo deverá funcionar nos principais sistemas operacionais mob
 
 RF-006: O sistema deverá permitir a edição das informações do usuário e dos pets cadastrados.
 
+---
+
 ### Caso teste CT-011
 
 **Objetivo do teste:**
@@ -118,6 +144,8 @@ RF-006: O sistema deverá permitir a edição das informações do usuário e do
 
 RF-006: O sistema deverá permitir a edição das informações do usuário e dos pets cadastrados.
 
+---
+
 ### Caso teste CT-012
 
 **Objetivo do teste:**
@@ -127,6 +155,10 @@ RF-006: O sistema deverá permitir a edição das informações do usuário e do
 **Requisitos associados:**
 
 RF-002: O sistema deverá permitir criar um perfil para o pet, registrando e permitindo a verificação de seus dados básicos (nome, raça, espécie, peso, idade) e de vacinação (tipo de vacina e data de vacinação).
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-petpass-mobile/blob/76bc2d1b1990c8e82b959b03b5d980db5dca267e/docs/img/cadastrar%20vacina.jpeg
+
+---
 
 ### Caso teste CT-013
 
