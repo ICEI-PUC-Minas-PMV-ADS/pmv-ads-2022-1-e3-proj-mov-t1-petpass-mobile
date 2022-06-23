@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet, View, ScrollView, TouchableOpacity } from "react-native";
+import { StyleSheet, View, ScrollView, TouchableOpacity, Text } from "react-native";
 import { TextInput, Button, List } from "react-native-paper";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import moment from "moment";
@@ -89,7 +89,7 @@ const CadastrarVacina = () => {
             onChangeText={(text) => setIdade(text)}
           />
 
-          {showDataAplicacaoPicker && (
+          {showDataAplicacaoPicker ? (
             <DateTimePicker
               testID="dateTimeRegistroPicker"
               value={dataAplicacao}
@@ -102,7 +102,7 @@ const CadastrarVacina = () => {
                 setDataAplicacao(date);
               }}
             />
-          )}
+          ) : null}
 
           <TouchableOpacity onPress={() => setShowDataAplicacao(true)}>
             <TextInput
@@ -127,9 +127,10 @@ const CadastrarVacina = () => {
                 marginTop: 30,
               }}
               theme={{ roundness: 20 }}
+              color="#19225B"
               onPress={() => handleCreateVacina()}
             >
-              Cadastrar
+              <Text>Cadastrar</Text>
             </Button>
           </View>
         </ScrollView>

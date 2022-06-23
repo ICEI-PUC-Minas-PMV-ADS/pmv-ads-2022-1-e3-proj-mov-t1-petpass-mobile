@@ -81,7 +81,7 @@ const CadastrarPet = () => {
           value={idade}
           onChangeText={(text) => setIdade(text)}
         />
-        {showDataNascimentoPicker && (
+        {showDataNascimentoPicker ? (
           <DateTimePicker
             testID="dateTimeNascimentoPicker"
             value={dataNascimento}
@@ -94,8 +94,8 @@ const CadastrarPet = () => {
               setDataNascimento(date);
             }}
           />
-        )}
-        {showDataRegistroPicker && ( 
+        ) : null}
+        {showDataRegistroPicker ? ( 
           <DateTimePicker
             testID="dateTimeRegistroPicker"
             value={dataRegistro}
@@ -108,7 +108,7 @@ const CadastrarPet = () => {
               setDataRegistro(date);
             }}
           />
-        )}
+        ) : null}
         <TouchableOpacity onPress={() => setShowDataNascimentoPicker(true)}>
           <TextInput
             label="Data de Nascimento"
@@ -128,7 +128,7 @@ const CadastrarPet = () => {
           />
         </TouchableOpacity>
         <Button mode="contained"  onPress={() => handleCreatePet()}>
-          Cadastrar
+          <Text>Cadastrar</Text>
         </Button>
          </ScrollView>
     </View>

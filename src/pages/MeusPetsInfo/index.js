@@ -5,6 +5,8 @@ import { useIsFocused } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
 import { Button } from 'react-native-paper';
 import { useNavigation } from "@react-navigation/native";
+import { FontAwesome5 } from "@expo/vector-icons";
+
 
 
 
@@ -29,6 +31,11 @@ export default function MeusPetsInfo(){
       return new Date(data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});
     };
 
+    const HandleDeletePet = (id) => {
+      api.delete(`/pets/${id}`);
+      navigation.navigate("Meus Pets");
+    };
+
    return (
        <>
        
@@ -46,8 +53,20 @@ export default function MeusPetsInfo(){
                         <Text style={styles.restInfo}>Data Nasc: {formatarData(pet.dataNascimento)}</Text>
                         <Text style={styles.restInfo}>Data de Cadastro: {formatarData(pet.dataRegistro)}</Text>
                 </View>
-                
         </TouchableOpacity>
+
+                <Button
+                  mode="contained"
+                  theme={{ roundness: 100 }}
+                  style={{
+                     marginBottom: 20,
+                  }}
+                  onPress={() => HandleDeletePet(pet.id)}
+                  color="#19225B"
+                >
+                <FontAwesome5 name="trash" size={15} />
+                  <Text>Deletar Pet</Text>
+                </Button>
         
         <ScrollView>    
             {pet.vacinas?.length !== 0 ? (
@@ -73,18 +92,15 @@ export default function MeusPetsInfo(){
             ) : (
               <>
                 <Text style={styles.textNotVac}>Você não tem nenhuma vacina</Text>
-                <Button
-                  mode="contained"
-                  theme={{ roundness: 20 }}
-                  style={{
-                    marginTop: 20,
-                    paddingHorizontal: 40
-                  }}
-                  onPress={() => navigation.navigate("CadastrarVacina")}
-                  color="#19225B"
-                >
-                  Cadastrar Vacina
-                </Button>
+
+                  <Button
+                    mode="contained"
+                    theme={{ roundness: 20 }}
+                    onPress={() => navigation.navigate("CadastrarVacina")}
+                    color="#19225B"
+                  >
+                    <Text>Cadastrar Vacina</Text>
+                  </Button>
               </>
             )}
           </ScrollView>  

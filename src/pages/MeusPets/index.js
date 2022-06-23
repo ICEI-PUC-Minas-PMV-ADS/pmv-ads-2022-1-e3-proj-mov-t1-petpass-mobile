@@ -12,7 +12,6 @@ import { useNavigation } from "@react-navigation/native";
 import PetContext from "../../Hooks/pets";
 import { Button } from "react-native-paper";
 import { useIsFocused } from "@react-navigation/native";
-import { FontAwesome5 } from "@expo/vector-icons";
 
 import ImagemCachorro from "../../assets/Golden.jpg";
 import ImagemGato from "../../assets/gato.jpg";
@@ -23,7 +22,7 @@ export default function MeusPets() {
 
   useEffect(() => {
     api.get("/pets").then((res) => setPets(res.data));
-  }, []);
+  }, [isFocused]);
 
   const navigation = useNavigation();
 
@@ -58,12 +57,6 @@ export default function MeusPets() {
                   <Text style={styles.raça}>Raça: {item.raca}</Text>
                 </View>
 
-                <TouchableOpacity
-                  style={styles.icon}
-                  onPress={() => HandleDeletePet(item.id)}
-                >
-                  <FontAwesome5 name="trash" size={20} />
-                </TouchableOpacity>
               </TouchableOpacity>
             ))}
           </>
@@ -90,7 +83,7 @@ export default function MeusPets() {
                 onPress={() => navigation.navigate("CadastrarPet")}
                 color="#19225B"
               >
-                Cadastrar Pet
+                <Text>Cadastrar Pet</Text>
               </Button>
             </View>
           </>

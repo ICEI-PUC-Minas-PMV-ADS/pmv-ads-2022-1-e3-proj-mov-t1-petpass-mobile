@@ -1,8 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import api from "../../api/api";
-import { TextInput } from "react-native-web";
+import { TextInput } from "react-native";
+
+import { useNavigation, useIsFocused } from "@react-navigation/native";
+
+
+import { Button } from "react-native-paper";
+
 
 export default function App() {
   const [user, setUser] = useState([]);
@@ -11,37 +17,73 @@ export default function App() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
 
+  const isFocused = useIsFocused();
+  const navigation = useNavigation();
+
+
+
   useEffect(() => {
     api.get("/users").then((res) => setUser(res.data));
-  }, []);
+  }, [isFocused]);
 
   const handleEditProfile = (item) => {
     api.put(`/users/${item}`, { name, email });
+    navigation.navigate("Meus Pets");
     setEdit(false);
   };
 
   return (
     <View style={styles.container}>
-      <View style={{ marginLeft: 30 }}>
+      <View style={{ marginHorizontal: 10, backgroundColor:'#dcdcdc', marginBottom:20, marginTop:20 }}>
         {edit ? (
           <TextInput
             defaultValue={user[0]?.name}
-            style={{ marginTop: 50, fontSize: 20 }}
+            style={{ 
+              margin: 10, 
+              fontSize: 20, 
+              backgroundColor:'#fff',
+              borderRadius:10,
+              padding:10,
+              color:'#000'
+            }}
             onChangeText={setName}
           />
         ) : (
-          <Text style={{ marginTop: 50, fontSize: 20 }}>
+          <Text 
+          style={{
+             margin: 10, 
+             fontSize: 20, 
+             backgroundColor:'#fff',
+             borderRadius:10,
+             padding:10,
+             color:'#000'
+          }}>
             Nome: {user[0]?.name}
           </Text>
         )}
+
         {edit ? (
           <TextInput
             defaultValue={user[0]?.email}
-            style={{ marginTop: 20, fontSize: 20, marginBottom: 50 }}
+            style={{
+              margin: 10, 
+              fontSize: 20, 
+              backgroundColor:'#fff',
+              borderRadius:10,
+              padding:10,
+              color:'#000'
+            }}
             onChangeText={setEmail}
           />
         ) : (
-          <Text style={{ marginTop: 30, fontSize: 20, marginBottom: 50 }}>
+          <Text style={{
+             margin: 10,
+             fontSize: 20, 
+             backgroundColor:'#fff',
+             borderRadius:10,
+             padding:10,
+             color:'#000'
+          }}>
             Email: {user[0]?.email}
           </Text>
         )}
@@ -51,16 +93,28 @@ export default function App() {
 
       {edit ? (
         <Button
-          style={{ marginTop: 50 }}
-          title="Salvar dados"
-          onPress={() => handleEditProfile(user[0]?.id)}
-        />
+              mode="contained"
+              style={{
+                marginTop: 30,
+              }}
+              theme={{ roundness: 20 }}
+              color="#19225B"
+              onPress={() => handleEditProfile(user[0]?.id)}
+            >
+              <Text>Salvar dados</Text>
+            </Button>
       ) : (
         <Button
-          style={{ marginTop: 50 }}
-          title="Alterar dados"
-          onPress={() => setEdit(true)}
-        />
+              mode="contained"
+              style={{
+                marginTop: 30,
+              }}
+              theme={{ roundness: 20 }}
+              color="#19225B"
+              onPress={() => setEdit(true)}
+            >
+              <Text>Alterar Dados</Text>
+            </Button>
       )}
     </View>
   );
@@ -69,6 +123,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#DCDCDC",
   },
 });

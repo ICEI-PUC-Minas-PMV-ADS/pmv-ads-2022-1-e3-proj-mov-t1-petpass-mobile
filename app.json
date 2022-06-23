@@ -7,7 +7,7 @@
       "**/*"
     ],
     "android": {
-      "package": "com.yourcompany.yourappname",
+      "package": "com.pucMinas.petPass",
          "versionCode": 1
       }
   }
